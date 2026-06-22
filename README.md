@@ -1,5 +1,10 @@
 # SMS Spam Classifier
 
+## Live Demo
+
+🔗 Deployed Application:
+https://sms-spam-classifier-taufique.streamlit.app
+
 ## Overview
 
 This project is a machine learning-based SMS Spam Classifier developed using Python, Scikit-Learn, NLTK, and Streamlit. The objective of the project is to classify incoming SMS messages as either **Spam** or **Not Spam (Ham)**.
