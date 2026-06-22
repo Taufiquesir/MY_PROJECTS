@@ -5,10 +5,10 @@ import nltk
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
-
+nltk.download('wordnet')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
-nltk.download('wordnet')
+
 ps=PorterStemmer()
 
 def transform_text(text):
@@ -37,10 +37,11 @@ def transform_text(text):
 tfidf=pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
+st.set_page_config(page_title="SMS Spam Classifier",page_icon="📧",layout="centered")
+
 st.title("📧 SMS Spam Classifier")
 st.markdown("Detect whether a message is Spam or Not Spam using Machine Learning.")
 
-st.set_page_config(page_title="SMS Spam Classifier",page_icon="📧",layout="centered")
 input_sms=st.text_area("Enter the message")
 
 if st.button('Predict'):
