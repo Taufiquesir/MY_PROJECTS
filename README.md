@@ -13,18 +13,32 @@ The application performs text preprocessing, feature extraction using TF-IDF Vec
 
 ---
 
+## Screenshots
+
+### Home Page
+
+![Home Page](images/home.png)
+
+### Spam Prediction
+
+![Spam Prediction](images/spam_prediction.png)
+
+### Ham Prediction
+
+![Ham Prediction](images/ham_prediction.png)
+
 ## Motivation
 
 Spam messages are a common problem in digital communication. They often contain advertisements, fraudulent offers, phishing links, or misleading information. The goal of this project was to understand the complete machine learning workflow, starting from data preprocessing and feature engineering to model training and deployment.
 
 This project was also built to gain practical experience with:
 
-* Natural Language Processing (NLP)
-* Text preprocessing techniques
-* Feature extraction using TF-IDF
-* Machine Learning model training and evaluation
-* Model serialization using Pickle
-* Web application deployment using Streamlit
+- Natural Language Processing (NLP)
+- Text preprocessing techniques
+- Feature extraction using TF-IDF
+- Machine Learning model training and evaluation
+- Model serialization using Pickle
+- Web application deployment using Streamlit
 
 ---
 
@@ -34,8 +48,8 @@ The project uses the SMS Spam Collection Dataset containing labeled SMS messages
 
 Each message belongs to one of the following categories:
 
-* Spam
-* Ham (Not Spam)
+- Spam
+- Ham (Not Spam)
 
 Example:
 
@@ -54,10 +68,10 @@ The dataset was cleaned before training the model.
 
 Steps performed:
 
-* Removed unnecessary columns
-* Removed duplicate records
-* Handled missing values
-* Converted labels into numerical format
+- Removed unnecessary columns
+- Removed duplicate records
+- Handled missing values
+- Converted labels into numerical format
 
 ---
 
@@ -65,10 +79,10 @@ Steps performed:
 
 Several analyses were performed to understand the dataset:
 
-* Distribution of spam and ham messages
-* Number of characters in messages
-* Number of words in messages
-* Number of sentences in messages
+- Distribution of spam and ham messages
+- Number of characters in messages
+- Number of words in messages
+- Number of sentences in messages
 
 This helped in understanding the characteristics of spam messages compared to legitimate messages.
 
@@ -143,7 +157,7 @@ Several machine learning algorithms were experimented with, and Multinomial Naiv
 
 Algorithm Used:
 
-* Multinomial Naive Bayes
+- Multinomial Naive Bayes
 
 ---
 
@@ -166,22 +180,22 @@ These files are loaded directly by the Streamlit application for prediction.
 
 ### Programming Language
 
-* Python
+- Python
 
 ### Libraries
 
-* Pandas
-* NumPy
-* NLTK
-* Scikit-Learn
-* Streamlit
-* Pickle
+- Pandas
+- NumPy
+- NLTK
+- Scikit-Learn
+- Streamlit
+- Pickle
 
 ### Development Environment
 
-* Ubuntu 24.04
-* PyCharm
-* Jupyter Notebook
+- Ubuntu 24.04
+- PyCharm
+- Jupyter Notebook
 
 ---
 
@@ -269,11 +283,11 @@ Not Spam
 
 Some possible improvements for future versions include:
 
-* Deep Learning based classification using LSTM or Transformers
-* Email spam detection
-* Multilingual spam detection
-* Model monitoring and logging
-* Deployment using Docker and Cloud Platforms
+- Deep Learning based classification using LSTM or Transformers
+- Email spam detection
+- Multilingual spam detection
+- Model monitoring and logging
+- Deployment using Docker and Cloud Platforms
 
 ---
 
@@ -286,11 +300,11 @@ IIIT Hyderabad
 
 Interests:
 
-* Machine Learning
-* Deep Learning
-* Natural Language Processing
-* Information Security
-* Software Development
+- Machine Learning
+- Deep Learning
+- Natural Language Processing
+- Information Security
+- Software Development
 
 ---
 
