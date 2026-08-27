@@ -1,15 +1,46 @@
-# POSIX Shell Implementation in C++
+# POSIX Shell
 
-**Advanced Operating Systems — Assignment 2 (Monsoon 2025)**
+A Unix shell written from scratch in C++ — process control, pipelines, I/O
+redirection, signals and job control, with no use of `system()`, `popen()` or
+the C++ `filesystem` library.
 
-A custom interactive shell written in C++ which can create and manage new
-processes. It supports built-in commands, foreground and background jobs,
-input/output redirection, pipelines of any length, signal handling,
-autocomplete and a history which is kept across sessions.
+```bash
+make && ./myshell
+```
 
-The code is written in a modular way and **every command has been kept in its
-own separate file**, so that one command can be read or changed without
-touching the others.
+```
+<user@machine:~> ls -la | grep .cpp | wc -l
+17
+<user@machine:~> sleep 30 &
+71301
+<user@machine:~> jobs
+[1] Running   sleep [71301]
+```
+
+### What it does
+
+- **8 built-ins** — `cd`, `echo`, `pwd`, `ls`, `pinfo`, `search`, `history`, `jobs`
+- **Pipelines of any length**, with redirection at any stage
+- **Job control** — background jobs, Ctrl-C, Ctrl-Z, Ctrl-D
+- **TAB completion** for filenames and for commands scanned from `$PATH`
+- **Persistent history** across sessions, with arrow-key recall
+
+### Things I am proud of
+
+- **`ls -l` output is byte-identical to the system `ls`** — verified with `diff`,
+  including block totals and column alignment
+- **Pipelines never hang.** A reader only sees EOF once *every* write end is
+  closed, so the parent closes all `2(n-1)` pipe descriptors after forking —
+  the bug that makes `cat file | head -2` block forever
+- **Async-signal-safe `SIGCHLD` handling.** The handler uses `write()` rather
+  than `cout`, and drains children in a loop because signals are not queued
+- **Redirection works on built-ins too**, which run in-process — the shell saves
+  its own descriptors, flushes, then restores them
+- **Zero warnings** under `-Wall -Wextra`
+
+Full write-up: **[SHELL_BOOK.pdf](SHELL_BOOK.pdf)** — a 52-page implementation
+study covering every module, system call and edge case.
+Testing: **[TESTING_GUIDE.md](TESTING_GUIDE.md)** explains every test case.
 
 | | |
 |---|---|
@@ -18,6 +49,8 @@ touching the others.
 | Total lines | about 1841 |
 | External library | GNU readline (`-lreadline`) |
 | Compiler warnings | 0 with `-Wall -Wextra` |
+
+> Built for Advanced Operating Systems, Assignment 2 (Monsoon 2025).
 
 ---
 
