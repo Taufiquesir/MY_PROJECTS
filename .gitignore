@@ -1,4 +1,24 @@
-.venv/
-.idea/
+# Python
 __pycache__/
+*.py[cod]
+.venv/
+venv/
 .ipynb_checkpoints/
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+.DS_Store
+
+# C/C++ build artifacts
+*.o
+POSIX_SHELL_IMPLEMENTATION/myshell
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.toc

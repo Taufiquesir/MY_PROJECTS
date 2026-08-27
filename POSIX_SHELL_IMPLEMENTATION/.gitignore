@@ -1,0 +1,19 @@
+# Build artifacts
+*.o
+myshell
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.toc
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Assignment PDF (course material, not my work)
+AOS_Assignment_2_M25_V1.pdf
+*.bak

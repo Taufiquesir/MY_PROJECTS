@@ -1,0 +1,6 @@
+
+classes = 2
+train = /content/darknet/data/agri_data/train.txt
+valid = /content/darknet/data/test.txt
+names = /content/darknet/data/obj.names
+backup = /mydrive/Agriculture/backup/
