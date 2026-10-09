@@ -1,0 +1,37 @@
+# Phase 1 configuration for Model H (Hindi).
+language: hindi
+script: Devanagari
+tier: higher-resource
+
+manual_collection:
+  target_tokens: 125_000_000
+  bytes_per_token_estimate: 13.5  # 4.5 chars/token * 3 bytes/char (Devanagari UTF-8)
+  sources:
+    - zeenews.india.com
+    - indiatv.in
+    - jagran.com
+    - patrika.com
+    - hi.wikipedia.org
+
+public_collection:
+  corpus: ai4bharat/sangraha
+  subset: verified/hin
+
+overall_token_target: 500_000_000
+manual_fraction_floor: 0.20
+
+cleaning:
+  min_chars: 200
+  min_devanagari_ratio: 0.70
+  max_latin_ratio: 0.15
+  dedup: exact_sha256
+
+split:
+  method: document_level_hash
+  rule: "sha256(doc_id) % 100 -> train[0,98) val[98,99) test[99,100)"
+
+tokenizer:
+  algorithm: sentencepiece_unigram
+  vocab_size: 16_000
+  byte_fallback: true
+  normalization: identity  # corpus is pre-normalized to NFC by clean.py

@@ -1,0 +1,52 @@
+# Hindi (Model H) manual-collection sources.
+#
+# Every domain below was probed by hand on 19 Aug 2026 (curl against sitemap.xml /
+# robots.txt, then a live trafilatura extraction test on one sample article) before
+# being added here -- see the notes per domain for what was checked and why domains
+# that looked promising but failed the check were left out.
+#
+# Rejected candidates: livehindustan.com, bhaskar.com, navbharattimes.indiatimes.com,
+# abplive.com all return 404 on /sitemap.xml with no robots.txt-declared alternative,
+# so were not crawled blindly. amarujala.com's /sitemap.xml responds but only lists a
+# handful of top-level nav pages (news-archives, result pages), not article URLs, so
+# it was skipped rather than guessing at an undocumented sitemap path.
+target_tokens: 125_000_000     # manual-collection target for this language
+bytes_per_token: 13.5           # planning estimate: 4.5 chars/token (pre-tokenizer,
+                                 # Devanagari) * 3 bytes/char in UTF-8; replaced by a
+                                 # measured rate once the tokenizer exists
+
+domains:
+  # WordPress-style yearly -> monthly sitemap index, verified back to at least 2015.
+  # Sample article (2018 archive) extracted cleanly with trafilatura, no boilerplate.
+  - name: zeenews.india.com
+    base_url: https://zeenews.india.com/hindi
+    sitemaps:
+      - https://zeenews.india.com/hindi/sitemaps/sitemap-2026-index.xml
+      - https://zeenews.india.com/hindi/sitemaps/sitemap-2025-index.xml
+      - https://zeenews.india.com/hindi/sitemaps/sitemap-2024-index.xml
+      - https://zeenews.india.com/hindi/sitemaps/sitemap-2023-index.xml
+    max_urls: 150000
+
+  # Daily sitemap files named by date, dozens of articles per file, deep archive.
+  # Sample article verified: clean body text, Devanagari, no wire-service boilerplate.
+  - name: indiatv.in
+    base_url: https://www.indiatv.in
+    sitemaps:
+      - https://www.indiatv.in/sitemap.xml
+    max_urls: 150000
+
+  # Static combined-category sitemap, verified working, general national news outlet.
+  - name: jagran.com
+    base_url: https://www.jagran.com
+    sitemaps:
+      - https://www.jagran.com/all-news-sitemap.xml
+    url_must_match: "\\.html$"
+    max_urls: 60000
+
+  # Date-partitioned Google-News-style sitemap, one file per day, deep archive.
+  - name: patrika.com
+    base_url: https://www.patrika.com
+    date_sitemap: "https://www.patrika.com/date/google-sitemap-{yyyy}-{mm}-{dd}.xml"
+    date_start: "2025-01-01"
+    date_end: "2026-08-19"
+    max_urls: 150000

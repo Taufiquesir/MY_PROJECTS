@@ -1,0 +1,1510 @@
+6.4s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.4s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.4s 3 0.00s - to python to disable frozen modules.
+6.4s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.1s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.1s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.1s 7 0.00s - to python to disable frozen modules.
+7.1s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.2s 9 /kaggle/input
+8.2s 10 /kaggle/input/datasets
+8.2s 11 /kaggle/input/datasets/mdtaufiquehussain
+8.2s 12 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code
+8.2s 13 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/model
+8.2s 14 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/tests
+8.2s 15 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/hindi
+8.2s 16 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/.gitignore
+8.2s 17 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/collection
+8.2s 18 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/README.md
+8.2s 19 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/report
+8.2s 20 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/run_phase1.py
+8.2s 21 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/requirements.txt
+8.2s 22 /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code/nepali
+8.2s 23 /kaggle/input/datasets/mdtaufiquehussain/lma-phase-hindi-data
+8.2s 24 /kaggle/input/datasets/mdtaufiquehussain/lma-phase-hindi-data/LMA-Phase1-Hindi
+8.7s 25 copied code from /kaggle/input/datasets/mdtaufiquehussain/lma-phase2-code -> /kaggle/working/repo
+8.7s 26 [PosixPath('/kaggle/working/repo/collection'), PosixPath('/kaggle/working/repo/hindi'), PosixPath('/kaggle/working/repo/requirements.txt'), PosixPath('/kaggle/working/repo/model'), PosixPath('/kaggle/working/repo/tests'), PosixPath('/kaggle/working/repo/report'), PosixPath('/kaggle/working/repo/run_phase1.py'), PosixPath('/kaggle/working/repo/nepali'), PosixPath('/kaggle/working/repo/.gitignore'), PosixPath('/kaggle/working/repo/README.md')]
+13.8s 27 no checkpoint input configured -- starting fresh
+18.7s 28 found splits dir: /kaggle/input/datasets/mdtaufiquehussain/lma-phase-hindi-data/LMA-Phase1-Hindi/splits
+18.7s 29 model: ModelConfig(vocab_size=9000, d_model=384, n_layers=13, n_heads=6, d_ff=1536, max_seq_len=256, dropout=0.1)
+18.7s 30 train: TrainConfig(lr=0.0003, weight_decay=0.1, beta1=0.9, beta2=0.95, grad_clip=1.0, warmup_steps=1000, max_steps=61000, batch_size=32, eval_every=500, eval_batches=50, checkpoint_every=500, log_every=50)
+18.7s 31 [hindi] tokenizing train split -> /kaggle/working/tokenized/hindi/train.bin
+798.8s 32 [hindi] train: 683,611,144 tokens
+798.8s 33 [hindi] tokenizing val split -> /kaggle/working/tokenized/hindi/val.bin
+807.0s 34 [hindi] val: 6,938,359 tokens
+813.3s 35 starting fresh: 26,524,800 trainable params
+840.1s 36 step 50/61000 | train_loss 8.5920 | lr 1.50e-05 | 27s elapsed
+866.8s 37 step 100/61000 | train_loss 8.1936 | lr 3.00e-05 | 53s elapsed
+894.0s 38 step 150/61000 | train_loss 7.6718 | lr 4.50e-05 | 80s elapsed
+921.8s 39 step 200/61000 | train_loss 7.0970 | lr 6.00e-05 | 108s elapsed
+950.5s 40 step 250/61000 | train_loss 6.8612 | lr 7.50e-05 | 137s elapsed
+979.8s 41 step 300/61000 | train_loss 6.5969 | lr 9.00e-05 | 166s elapsed
+1009.8s 42 step 350/61000 | train_loss 6.4100 | lr 1.05e-04 | 196s elapsed
+1039.8s 43 step 400/61000 | train_loss 6.3253 | lr 1.20e-04 | 226s elapsed
+1070.0s 44 step 450/61000 | train_loss 6.1509 | lr 1.35e-04 | 256s elapsed
+1100.4s 45 step 500/61000 | train_loss 5.9293 | lr 1.50e-04 | 287s elapsed
+1110.9s 46 step 500 | val_loss 5.9377 | val_ppl 379.07
+1111.9s 47 checkpoint saved at step 500
+1142.5s 48 step 550/61000 | train_loss 5.8744 | lr 1.65e-04 | 329s elapsed
+1173.2s 49 step 600/61000 | train_loss 5.7794 | lr 1.80e-04 | 360s elapsed
+1204.0s 50 step 650/61000 | train_loss 5.6776 | lr 1.95e-04 | 390s elapsed
+1235.0s 51 step 700/61000 | train_loss 5.5860 | lr 2.10e-04 | 421s elapsed
+1266.0s 52 step 750/61000 | train_loss 5.5268 | lr 2.25e-04 | 452s elapsed
+1297.0s 53 step 800/61000 | train_loss 5.4403 | lr 2.40e-04 | 483s elapsed
+1328.1s 54 step 850/61000 | train_loss 5.4863 | lr 2.55e-04 | 515s elapsed
+1359.2s 55 step 900/61000 | train_loss 5.4089 | lr 2.70e-04 | 546s elapsed
+1390.4s 56 step 950/61000 | train_loss 5.2782 | lr 2.85e-04 | 577s elapsed
+1421.5s 57 step 1000/61000 | train_loss 5.2781 | lr 3.00e-04 | 608s elapsed
+1432.2s 58 step 1000 | val_loss 5.2004 | val_ppl 181.35
+1433.5s 59 checkpoint saved at step 1000
+1464.6s 60 step 1050/61000 | train_loss 5.2270 | lr 3.00e-04 | 651s elapsed
+1495.7s 61 step 1100/61000 | train_loss 5.1424 | lr 3.00e-04 | 682s elapsed
+1526.8s 62 step 1150/61000 | train_loss 5.0101 | lr 3.00e-04 | 713s elapsed
+1558.0s 63 step 1200/61000 | train_loss 5.0709 | lr 3.00e-04 | 744s elapsed
+1589.1s 64 step 1250/61000 | train_loss 5.0711 | lr 3.00e-04 | 776s elapsed
+1620.4s 65 step 1300/61000 | train_loss 4.9532 | lr 3.00e-04 | 807s elapsed
+1651.6s 66 step 1350/61000 | train_loss 4.8791 | lr 3.00e-04 | 838s elapsed
+1682.8s 67 step 1400/61000 | train_loss 5.0195 | lr 3.00e-04 | 869s elapsed
+1714.0s 68 step 1450/61000 | train_loss 4.8319 | lr 3.00e-04 | 900s elapsed
+1745.2s 69 step 1500/61000 | train_loss 4.8316 | lr 3.00e-04 | 932s elapsed
+1756.0s 70 step 1500 | val_loss 4.7894 | val_ppl 120.23
+1757.2s 71 checkpoint saved at step 1500
+1788.3s 72 step 1550/61000 | train_loss 4.8592 | lr 3.00e-04 | 975s elapsed
+1819.5s 73 step 1600/61000 | train_loss 4.7306 | lr 3.00e-04 | 1006s elapsed
+1850.7s 74 step 1650/61000 | train_loss 4.8318 | lr 3.00e-04 | 1037s elapsed
+1881.9s 75 step 1700/61000 | train_loss 4.7148 | lr 3.00e-04 | 1068s elapsed
+1913.1s 76 step 1750/61000 | train_loss 4.7705 | lr 3.00e-04 | 1099s elapsed
+1944.3s 77 step 1800/61000 | train_loss 4.7209 | lr 3.00e-04 | 1131s elapsed
+1975.6s 78 step 1850/61000 | train_loss 4.5976 | lr 3.00e-04 | 1162s elapsed
+2006.8s 79 step 1900/61000 | train_loss 4.6686 | lr 3.00e-04 | 1193s elapsed
+2038.1s 80 step 1950/61000 | train_loss 4.6398 | lr 3.00e-04 | 1224s elapsed
+2069.4s 81 step 2000/61000 | train_loss 4.6082 | lr 3.00e-04 | 1256s elapsed
+2080.1s 82 step 2000 | val_loss 4.5462 | val_ppl 94.27
+2081.4s 83 checkpoint saved at step 2000
+2112.5s 84 step 2050/61000 | train_loss 4.5414 | lr 3.00e-04 | 1299s elapsed
+2143.7s 85 step 2100/61000 | train_loss 4.5875 | lr 3.00e-04 | 1330s elapsed
+2174.8s 86 step 2150/61000 | train_loss 4.5488 | lr 3.00e-04 | 1361s elapsed
+2206.0s 87 step 2200/61000 | train_loss 4.4621 | lr 3.00e-04 | 1392s elapsed
+2237.2s 88 step 2250/61000 | train_loss 4.6538 | lr 3.00e-04 | 1424s elapsed
+2268.5s 89 step 2300/61000 | train_loss 4.3750 | lr 3.00e-04 | 1455s elapsed
+2299.7s 90 step 2350/61000 | train_loss 4.5273 | lr 3.00e-04 | 1486s elapsed
+2330.9s 91 step 2400/61000 | train_loss 4.3361 | lr 3.00e-04 | 1517s elapsed
+2362.1s 92 step 2450/61000 | train_loss 4.4268 | lr 3.00e-04 | 1548s elapsed
+2393.3s 93 step 2500/61000 | train_loss 4.3337 | lr 3.00e-04 | 1580s elapsed
+2404.1s 94 step 2500 | val_loss 4.3561 | val_ppl 77.96
+2405.6s 95 checkpoint saved at step 2500
+2436.7s 96 step 2550/61000 | train_loss 4.3075 | lr 3.00e-04 | 1623s elapsed
+2467.9s 97 step 2600/61000 | train_loss 4.3379 | lr 3.00e-04 | 1654s elapsed
+2499.1s 98 step 2650/61000 | train_loss 4.3706 | lr 2.99e-04 | 1686s elapsed
+2530.4s 99 step 2700/61000 | train_loss 4.4550 | lr 2.99e-04 | 1717s elapsed
+2561.7s 100 step 2750/61000 | train_loss 4.3578 | lr 2.99e-04 | 1748s elapsed
+2593.0s 101 step 2800/61000 | train_loss 4.2984 | lr 2.99e-04 | 1779s elapsed
+2624.2s 102 step 2850/61000 | train_loss 4.3753 | lr 2.99e-04 | 1811s elapsed
+2655.4s 103 step 2900/61000 | train_loss 4.4230 | lr 2.99e-04 | 1842s elapsed
+2686.7s 104 step 2950/61000 | train_loss 4.3644 | lr 2.99e-04 | 1873s elapsed
+2717.9s 105 step 3000/61000 | train_loss 4.3154 | lr 2.99e-04 | 1904s elapsed
+2728.7s 106 step 3000 | val_loss 4.2407 | val_ppl 69.45
+2729.9s 107 checkpoint saved at step 3000
+2761.1s 108 step 3050/61000 | train_loss 4.3138 | lr 2.99e-04 | 1947s elapsed
+2792.3s 109 step 3100/61000 | train_loss 4.3158 | lr 2.99e-04 | 1979s elapsed
+2823.5s 110 step 3150/61000 | train_loss 4.2422 | lr 2.99e-04 | 2010s elapsed
+2854.8s 111 step 3200/61000 | train_loss 4.1905 | lr 2.99e-04 | 2041s elapsed
+2886.0s 112 step 3250/61000 | train_loss 4.1680 | lr 2.99e-04 | 2072s elapsed
+2917.3s 113 step 3300/61000 | train_loss 4.3484 | lr 2.99e-04 | 2104s elapsed
+2948.6s 114 step 3350/61000 | train_loss 4.2554 | lr 2.99e-04 | 2135s elapsed
+2979.9s 115 step 3400/61000 | train_loss 4.2774 | lr 2.99e-04 | 2166s elapsed
+3011.1s 116 step 3450/61000 | train_loss 4.3208 | lr 2.99e-04 | 2198s elapsed
+3042.4s 117 step 3500/61000 | train_loss 4.2397 | lr 2.99e-04 | 2229s elapsed
+3053.1s 118 step 3500 | val_loss 4.1542 | val_ppl 63.70
+3054.4s 119 checkpoint saved at step 3500
+3085.5s 120 step 3550/61000 | train_loss 4.1714 | lr 2.99e-04 | 2272s elapsed
+3116.6s 121 step 3600/61000 | train_loss 4.1965 | lr 2.99e-04 | 2303s elapsed
+3147.8s 122 step 3650/61000 | train_loss 4.0545 | lr 2.99e-04 | 2334s elapsed
+3179.1s 123 step 3700/61000 | train_loss 4.2962 | lr 2.99e-04 | 2365s elapsed
+3210.3s 124 step 3750/61000 | train_loss 4.2170 | lr 2.99e-04 | 2397s elapsed
+3241.6s 125 step 3800/61000 | train_loss 4.1524 | lr 2.99e-04 | 2428s elapsed
+3272.9s 126 step 3850/61000 | train_loss 4.0781 | lr 2.98e-04 | 2459s elapsed
+3304.1s 127 step 3900/61000 | train_loss 3.9539 | lr 2.98e-04 | 2491s elapsed
+3335.4s 128 step 3950/61000 | train_loss 4.2355 | lr 2.98e-04 | 2522s elapsed
+3366.6s 129 step 4000/61000 | train_loss 4.2305 | lr 2.98e-04 | 2553s elapsed
+3377.4s 130 step 4000 | val_loss 4.0433 | val_ppl 57.01
+3378.6s 131 checkpoint saved at step 4000
+3409.8s 132 step 4050/61000 | train_loss 4.1872 | lr 2.98e-04 | 2596s elapsed
+3441.0s 133 step 4100/61000 | train_loss 4.2513 | lr 2.98e-04 | 2627s elapsed
+3472.2s 134 step 4150/61000 | train_loss 4.1708 | lr 2.98e-04 | 2659s elapsed
+3503.4s 135 step 4200/61000 | train_loss 4.1808 | lr 2.98e-04 | 2690s elapsed
+3534.7s 136 step 4250/61000 | train_loss 4.1138 | lr 2.98e-04 | 2721s elapsed
+3565.9s 137 step 4300/61000 | train_loss 3.9342 | lr 2.98e-04 | 2752s elapsed
+3597.2s 138 step 4350/61000 | train_loss 4.1246 | lr 2.98e-04 | 2784s elapsed
+3628.5s 139 step 4400/61000 | train_loss 4.0281 | lr 2.98e-04 | 2815s elapsed
+3659.7s 140 step 4450/61000 | train_loss 4.1665 | lr 2.98e-04 | 2846s elapsed
+3691.0s 141 step 4500/61000 | train_loss 4.0800 | lr 2.98e-04 | 2877s elapsed
+3701.8s 142 step 4500 | val_loss 3.9571 | val_ppl 52.31
+3703.0s 143 checkpoint saved at step 4500
+3734.1s 144 step 4550/61000 | train_loss 3.9517 | lr 2.98e-04 | 2920s elapsed
+3765.2s 145 step 4600/61000 | train_loss 4.0686 | lr 2.98e-04 | 2952s elapsed
+3796.5s 146 step 4650/61000 | train_loss 4.1029 | lr 2.98e-04 | 2983s elapsed
+3827.8s 147 step 4700/61000 | train_loss 4.0309 | lr 2.97e-04 | 3014s elapsed
+3859.0s 148 step 4750/61000 | train_loss 3.9800 | lr 2.97e-04 | 3045s elapsed
+3890.3s 149 step 4800/61000 | train_loss 3.9976 | lr 2.97e-04 | 3077s elapsed
+3921.5s 150 step 4850/61000 | train_loss 4.0673 | lr 2.97e-04 | 3108s elapsed
+3952.8s 151 step 4900/61000 | train_loss 4.0500 | lr 2.97e-04 | 3139s elapsed
+3984.1s 152 step 4950/61000 | train_loss 4.1016 | lr 2.97e-04 | 3170s elapsed
+4015.4s 153 step 5000/61000 | train_loss 4.0340 | lr 2.97e-04 | 3202s elapsed
+4026.1s 154 step 5000 | val_loss 3.9133 | val_ppl 50.07
+4027.5s 155 checkpoint saved at step 5000
+4058.6s 156 step 5050/61000 | train_loss 3.9714 | lr 2.97e-04 | 3245s elapsed
+4089.8s 157 step 5100/61000 | train_loss 4.0182 | lr 2.97e-04 | 3276s elapsed
+4120.9s 158 step 5150/61000 | train_loss 3.9587 | lr 2.97e-04 | 3307s elapsed
+4152.1s 159 step 5200/61000 | train_loss 4.0181 | lr 2.97e-04 | 3339s elapsed
+4183.4s 160 step 5250/61000 | train_loss 3.8837 | lr 2.97e-04 | 3370s elapsed
+4214.6s 161 step 5300/61000 | train_loss 3.9750 | lr 2.97e-04 | 3401s elapsed
+4245.9s 162 step 5350/61000 | train_loss 3.9860 | lr 2.97e-04 | 3432s elapsed
+4277.2s 163 step 5400/61000 | train_loss 3.9305 | lr 2.96e-04 | 3464s elapsed
+4308.5s 164 step 5450/61000 | train_loss 3.8710 | lr 2.96e-04 | 3495s elapsed
+4339.7s 165 step 5500/61000 | train_loss 3.9908 | lr 2.96e-04 | 3526s elapsed
+4350.5s 166 step 5500 | val_loss 3.8541 | val_ppl 47.19
+4351.8s 167 checkpoint saved at step 5500
+4383.0s 168 step 5550/61000 | train_loss 3.8278 | lr 2.96e-04 | 3569s elapsed
+4414.2s 169 step 5600/61000 | train_loss 4.0793 | lr 2.96e-04 | 3601s elapsed
+4445.4s 170 step 5650/61000 | train_loss 4.0077 | lr 2.96e-04 | 3632s elapsed
+4476.7s 171 step 5700/61000 | train_loss 3.9853 | lr 2.96e-04 | 3663s elapsed
+4507.9s 172 step 5750/61000 | train_loss 3.7950 | lr 2.96e-04 | 3694s elapsed
+4539.1s 173 step 5800/61000 | train_loss 3.9476 | lr 2.96e-04 | 3726s elapsed
+4570.4s 174 step 5850/61000 | train_loss 3.9947 | lr 2.96e-04 | 3757s elapsed
+4601.6s 175 step 5900/61000 | train_loss 3.8892 | lr 2.96e-04 | 3788s elapsed
+4632.9s 176 step 5950/61000 | train_loss 3.7385 | lr 2.95e-04 | 3819s elapsed
+4664.2s 177 step 6000/61000 | train_loss 3.8869 | lr 2.95e-04 | 3851s elapsed
+4674.9s 178 step 6000 | val_loss 3.7926 | val_ppl 44.37
+4676.1s 179 checkpoint saved at step 6000
+4707.3s 180 step 6050/61000 | train_loss 3.9562 | lr 2.95e-04 | 3894s elapsed
+4738.5s 181 step 6100/61000 | train_loss 3.6633 | lr 2.95e-04 | 3925s elapsed
+4769.6s 182 step 6150/61000 | train_loss 3.8695 | lr 2.95e-04 | 3956s elapsed
+4800.8s 183 step 6200/61000 | train_loss 3.7583 | lr 2.95e-04 | 3987s elapsed
+4832.0s 184 step 6250/61000 | train_loss 3.7846 | lr 2.95e-04 | 4018s elapsed
+4863.2s 185 step 6300/61000 | train_loss 3.8530 | lr 2.95e-04 | 4050s elapsed
+4894.4s 186 step 6350/61000 | train_loss 3.8211 | lr 2.95e-04 | 4081s elapsed
+4925.6s 187 step 6400/61000 | train_loss 3.7930 | lr 2.95e-04 | 4112s elapsed
+4956.8s 188 step 6450/61000 | train_loss 3.8470 | lr 2.95e-04 | 4143s elapsed
+4988.0s 189 step 6500/61000 | train_loss 3.8175 | lr 2.94e-04 | 4174s elapsed
+4998.7s 190 step 6500 | val_loss 3.7813 | val_ppl 43.87
+5000.0s 191 checkpoint saved at step 6500
+5031.1s 192 step 6550/61000 | train_loss 3.9366 | lr 2.94e-04 | 4217s elapsed
+5062.2s 193 step 6600/61000 | train_loss 3.8248 | lr 2.94e-04 | 4249s elapsed
+5093.4s 194 step 6650/61000 | train_loss 3.7883 | lr 2.94e-04 | 4280s elapsed
+5124.7s 195 step 6700/61000 | train_loss 3.7688 | lr 2.94e-04 | 4311s elapsed
+5155.9s 196 step 6750/61000 | train_loss 3.9893 | lr 2.94e-04 | 4342s elapsed
+5187.2s 197 step 6800/61000 | train_loss 3.7480 | lr 2.94e-04 | 4374s elapsed
+5218.4s 198 step 6850/61000 | train_loss 3.7189 | lr 2.94e-04 | 4405s elapsed
+5249.7s 199 step 6900/61000 | train_loss 3.7066 | lr 2.94e-04 | 4436s elapsed
+5280.9s 200 step 6950/61000 | train_loss 3.7847 | lr 2.94e-04 | 4467s elapsed
+5312.1s 201 step 7000/61000 | train_loss 3.7283 | lr 2.93e-04 | 4498s elapsed
+5322.8s 202 step 7000 | val_loss 3.7333 | val_ppl 41.82
+5324.1s 203 checkpoint saved at step 7000
+5355.2s 204 step 7050/61000 | train_loss 3.8006 | lr 2.93e-04 | 4542s elapsed
+5386.4s 205 step 7100/61000 | train_loss 3.8748 | lr 2.93e-04 | 4573s elapsed
+5417.5s 206 step 7150/61000 | train_loss 3.7783 | lr 2.93e-04 | 4604s elapsed
+5448.6s 207 step 7200/61000 | train_loss 3.7860 | lr 2.93e-04 | 4635s elapsed
+5479.8s 208 step 7250/61000 | train_loss 3.7718 | lr 2.93e-04 | 4666s elapsed
+5511.0s 209 step 7300/61000 | train_loss 3.8417 | lr 2.93e-04 | 4697s elapsed
+5542.2s 210 step 7350/61000 | train_loss 3.7243 | lr 2.93e-04 | 4729s elapsed
+5573.4s 211 step 7400/61000 | train_loss 3.7475 | lr 2.92e-04 | 4760s elapsed
+5604.6s 212 step 7450/61000 | train_loss 3.8368 | lr 2.92e-04 | 4791s elapsed
+5635.9s 213 step 7500/61000 | train_loss 3.8607 | lr 2.92e-04 | 4822s elapsed
+5646.6s 214 step 7500 | val_loss 3.7179 | val_ppl 41.18
+5648.2s 215 checkpoint saved at step 7500
+5679.3s 216 step 7550/61000 | train_loss 3.7716 | lr 2.92e-04 | 4866s elapsed
+5710.5s 217 step 7600/61000 | train_loss 3.8422 | lr 2.92e-04 | 4897s elapsed
+5741.6s 218 step 7650/61000 | train_loss 3.8361 | lr 2.92e-04 | 4928s elapsed
+5772.8s 219 step 7700/61000 | train_loss 3.8644 | lr 2.92e-04 | 4959s elapsed
+5804.0s 220 step 7750/61000 | train_loss 3.6909 | lr 2.92e-04 | 4990s elapsed
+5835.2s 221 step 7800/61000 | train_loss 3.7877 | lr 2.92e-04 | 5022s elapsed
+5866.5s 222 step 7850/61000 | train_loss 3.7913 | lr 2.91e-04 | 5053s elapsed
+5897.7s 223 step 7900/61000 | train_loss 3.6260 | lr 2.91e-04 | 5084s elapsed
+5929.0s 224 step 7950/61000 | train_loss 3.6863 | lr 2.91e-04 | 5115s elapsed
+5960.2s 225 step 8000/61000 | train_loss 3.7913 | lr 2.91e-04 | 5147s elapsed
+5970.9s 226 step 8000 | val_loss 3.6789 | val_ppl 39.60
+5972.4s 227 checkpoint saved at step 8000
+6003.5s 228 step 8050/61000 | train_loss 3.6378 | lr 2.91e-04 | 5190s elapsed
+6034.7s 229 step 8100/61000 | train_loss 3.7613 | lr 2.91e-04 | 5221s elapsed
+6065.9s 230 step 8150/61000 | train_loss 3.6576 | lr 2.91e-04 | 5252s elapsed
+6097.1s 231 step 8200/61000 | train_loss 3.7020 | lr 2.91e-04 | 5284s elapsed
+6128.3s 232 step 8250/61000 | train_loss 3.7483 | lr 2.90e-04 | 5315s elapsed
+6159.6s 233 step 8300/61000 | train_loss 3.6738 | lr 2.90e-04 | 5346s elapsed
+6190.8s 234 step 8350/61000 | train_loss 3.7193 | lr 2.90e-04 | 5377s elapsed
+6222.0s 235 step 8400/61000 | train_loss 3.6435 | lr 2.90e-04 | 5408s elapsed
+6253.3s 236 step 8450/61000 | train_loss 3.6318 | lr 2.90e-04 | 5440s elapsed
+6284.6s 237 step 8500/61000 | train_loss 3.7044 | lr 2.90e-04 | 5471s elapsed
+6295.3s 238 step 8500 | val_loss 3.6635 | val_ppl 39.00
+6296.5s 239 checkpoint saved at step 8500
+6327.7s 240 step 8550/61000 | train_loss 3.8364 | lr 2.90e-04 | 5514s elapsed
+6358.9s 241 step 8600/61000 | train_loss 3.6172 | lr 2.89e-04 | 5545s elapsed
+6390.0s 242 step 8650/61000 | train_loss 3.7584 | lr 2.89e-04 | 5576s elapsed
+6421.2s 243 step 8700/61000 | train_loss 3.7586 | lr 2.89e-04 | 5608s elapsed
+6452.5s 244 step 8750/61000 | train_loss 3.7502 | lr 2.89e-04 | 5639s elapsed
+6483.8s 245 step 8800/61000 | train_loss 3.7816 | lr 2.89e-04 | 5670s elapsed
+6515.2s 246 step 8850/61000 | train_loss 3.6680 | lr 2.89e-04 | 5702s elapsed
+6546.5s 247 step 8900/61000 | train_loss 3.5992 | lr 2.89e-04 | 5733s elapsed
+6577.8s 248 step 8950/61000 | train_loss 3.6251 | lr 2.88e-04 | 5764s elapsed
+6609.2s 249 step 9000/61000 | train_loss 3.8117 | lr 2.88e-04 | 5796s elapsed
+6619.9s 250 step 9000 | val_loss 3.6466 | val_ppl 38.35
+6621.4s 251 checkpoint saved at step 9000
+6652.6s 252 step 9050/61000 | train_loss 3.6595 | lr 2.88e-04 | 5839s elapsed
+6683.8s 253 step 9100/61000 | train_loss 3.8802 | lr 2.88e-04 | 5870s elapsed
+6715.0s 254 step 9150/61000 | train_loss 3.7120 | lr 2.88e-04 | 5901s elapsed
+6746.2s 255 step 9200/61000 | train_loss 3.6394 | lr 2.88e-04 | 5933s elapsed
+6777.4s 256 step 9250/61000 | train_loss 3.7007 | lr 2.88e-04 | 5964s elapsed
+6808.6s 257 step 9300/61000 | train_loss 3.8481 | lr 2.87e-04 | 5995s elapsed
+6839.9s 258 step 9350/61000 | train_loss 3.6525 | lr 2.87e-04 | 6026s elapsed
+6871.2s 259 step 9400/61000 | train_loss 3.6595 | lr 2.87e-04 | 6058s elapsed
+6902.4s 260 step 9450/61000 | train_loss 3.6505 | lr 2.87e-04 | 6089s elapsed
+6933.6s 261 step 9500/61000 | train_loss 3.7632 | lr 2.87e-04 | 6120s elapsed
+6944.4s 262 step 9500 | val_loss 3.6202 | val_ppl 37.34
+6945.6s 263 checkpoint saved at step 9500
+6976.8s 264 step 9550/61000 | train_loss 3.5635 | lr 2.87e-04 | 6163s elapsed
+7008.0s 265 step 9600/61000 | train_loss 3.6568 | lr 2.87e-04 | 6194s elapsed
+7039.2s 266 step 9650/61000 | train_loss 3.6329 | lr 2.86e-04 | 6226s elapsed
+7070.4s 267 step 9700/61000 | train_loss 3.5918 | lr 2.86e-04 | 6257s elapsed
+7101.7s 268 step 9750/61000 | train_loss 3.7391 | lr 2.86e-04 | 6288s elapsed
+7133.2s 269 step 9800/61000 | train_loss 3.6640 | lr 2.86e-04 | 6320s elapsed
+7164.7s 270 step 9850/61000 | train_loss 3.6198 | lr 2.86e-04 | 6351s elapsed
+7196.1s 271 step 9900/61000 | train_loss 3.6407 | lr 2.86e-04 | 6383s elapsed
+7227.5s 272 step 9950/61000 | train_loss 3.5728 | lr 2.85e-04 | 6414s elapsed
+7258.9s 273 step 10000/61000 | train_loss 3.5968 | lr 2.85e-04 | 6445s elapsed
+7269.7s 274 step 10000 | val_loss 3.6214 | val_ppl 37.39
+7270.3s 275 checkpoint saved at step 10000
+7301.6s 276 step 10050/61000 | train_loss 3.7233 | lr 2.85e-04 | 6488s elapsed
+7332.9s 277 step 10100/61000 | train_loss 3.6316 | lr 2.85e-04 | 6519s elapsed
+7364.2s 278 step 10150/61000 | train_loss 3.5176 | lr 2.85e-04 | 6551s elapsed
+7395.5s 279 step 10200/61000 | train_loss 3.6896 | lr 2.85e-04 | 6582s elapsed
+7426.8s 280 step 10250/61000 | train_loss 3.6477 | lr 2.84e-04 | 6613s elapsed
+7458.0s 281 step 10300/61000 | train_loss 3.5753 | lr 2.84e-04 | 6644s elapsed
+7489.2s 282 step 10350/61000 | train_loss 3.7499 | lr 2.84e-04 | 6676s elapsed
+7520.5s 283 step 10400/61000 | train_loss 3.8209 | lr 2.84e-04 | 6707s elapsed
+7551.7s 284 step 10450/61000 | train_loss 3.6543 | lr 2.84e-04 | 6738s elapsed
+7583.0s 285 step 10500/61000 | train_loss 3.5765 | lr 2.84e-04 | 6769s elapsed
+7593.7s 286 step 10500 | val_loss 3.5887 | val_ppl 36.19
+7595.1s 287 checkpoint saved at step 10500
+7626.3s 288 step 10550/61000 | train_loss 3.6079 | lr 2.83e-04 | 6813s elapsed
+7657.5s 289 step 10600/61000 | train_loss 3.5645 | lr 2.83e-04 | 6844s elapsed
+7688.8s 290 step 10650/61000 | train_loss 3.7403 | lr 2.83e-04 | 6875s elapsed
+7720.1s 291 step 10700/61000 | train_loss 3.7325 | lr 2.83e-04 | 6906s elapsed
+7751.4s 292 step 10750/61000 | train_loss 3.7241 | lr 2.83e-04 | 6938s elapsed
+7782.7s 293 step 10800/61000 | train_loss 3.7427 | lr 2.83e-04 | 6969s elapsed
+7813.9s 294 step 10850/61000 | train_loss 3.7330 | lr 2.82e-04 | 7000s elapsed
+7845.2s 295 step 10900/61000 | train_loss 3.6450 | lr 2.82e-04 | 7032s elapsed
+7876.4s 296 step 10950/61000 | train_loss 3.6466 | lr 2.82e-04 | 7063s elapsed
+7907.7s 297 step 11000/61000 | train_loss 3.6563 | lr 2.82e-04 | 7094s elapsed
+7918.4s 298 step 11000 | val_loss 3.6099 | val_ppl 36.96
+7919.1s 299 checkpoint saved at step 11000
+7950.3s 300 step 11050/61000 | train_loss 3.6451 | lr 2.82e-04 | 7137s elapsed
+7981.5s 301 step 11100/61000 | train_loss 3.5661 | lr 2.82e-04 | 7168s elapsed
+8012.8s 302 step 11150/61000 | train_loss 3.6743 | lr 2.81e-04 | 7199s elapsed
+8044.0s 303 step 11200/61000 | train_loss 3.8116 | lr 2.81e-04 | 7230s elapsed
+8075.3s 304 step 11250/61000 | train_loss 3.6139 | lr 2.81e-04 | 7262s elapsed
+8106.5s 305 step 11300/61000 | train_loss 3.6569 | lr 2.81e-04 | 7293s elapsed
+8137.8s 306 step 11350/61000 | train_loss 3.7822 | lr 2.81e-04 | 7324s elapsed
+8169.1s 307 step 11400/61000 | train_loss 3.6242 | lr 2.80e-04 | 7355s elapsed
+8200.5s 308 step 11450/61000 | train_loss 3.6533 | lr 2.80e-04 | 7387s elapsed
+8231.9s 309 step 11500/61000 | train_loss 3.6636 | lr 2.80e-04 | 7418s elapsed
+8242.7s 310 step 11500 | val_loss 3.5876 | val_ppl 36.15
+8244.0s 311 checkpoint saved at step 11500
+8275.4s 312 step 11550/61000 | train_loss 3.6693 | lr 2.80e-04 | 7462s elapsed
+8306.9s 313 step 11600/61000 | train_loss 3.7753 | lr 2.80e-04 | 7493s elapsed
+8338.2s 314 step 11650/61000 | train_loss 3.4613 | lr 2.80e-04 | 7525s elapsed
+8369.6s 315 step 11700/61000 | train_loss 3.5232 | lr 2.79e-04 | 7556s elapsed
+8401.0s 316 step 11750/61000 | train_loss 3.6034 | lr 2.79e-04 | 7587s elapsed
+8432.3s 317 step 11800/61000 | train_loss 3.7058 | lr 2.79e-04 | 7619s elapsed
+8463.6s 318 step 11850/61000 | train_loss 3.6982 | lr 2.79e-04 | 7650s elapsed
+8495.0s 319 step 11900/61000 | train_loss 3.6724 | lr 2.79e-04 | 7681s elapsed
+8526.3s 320 step 11950/61000 | train_loss 3.6568 | lr 2.78e-04 | 7713s elapsed
+8557.6s 321 step 12000/61000 | train_loss 3.6307 | lr 2.78e-04 | 7744s elapsed
+8568.3s 322 step 12000 | val_loss 3.5381 | val_ppl 34.40
+8569.8s 323 checkpoint saved at step 12000
+8601.0s 324 step 12050/61000 | train_loss 3.5337 | lr 2.78e-04 | 7787s elapsed
+8632.3s 325 step 12100/61000 | train_loss 3.6071 | lr 2.78e-04 | 7819s elapsed
+8663.5s 326 step 12150/61000 | train_loss 3.4587 | lr 2.78e-04 | 7850s elapsed
+8694.8s 327 step 12200/61000 | train_loss 3.5993 | lr 2.77e-04 | 7881s elapsed
+8726.0s 328 step 12250/61000 | train_loss 3.6587 | lr 2.77e-04 | 7912s elapsed
+8757.2s 329 step 12300/61000 | train_loss 3.5524 | lr 2.77e-04 | 7944s elapsed
+8788.6s 330 step 12350/61000 | train_loss 3.6323 | lr 2.77e-04 | 7975s elapsed
+8820.0s 331 step 12400/61000 | train_loss 3.6105 | lr 2.77e-04 | 8006s elapsed
+8851.4s 332 step 12450/61000 | train_loss 3.6455 | lr 2.76e-04 | 8038s elapsed
+8882.8s 333 step 12500/61000 | train_loss 3.6811 | lr 2.76e-04 | 8069s elapsed
+8893.6s 334 step 12500 | val_loss 3.5379 | val_ppl 34.39
+8894.9s 335 checkpoint saved at step 12500
+8926.2s 336 step 12550/61000 | train_loss 3.6363 | lr 2.76e-04 | 8113s elapsed
+8957.5s 337 step 12600/61000 | train_loss 3.5643 | lr 2.76e-04 | 8144s elapsed
+8988.8s 338 step 12650/61000 | train_loss 3.6069 | lr 2.76e-04 | 8175s elapsed
+9020.1s 339 step 12700/61000 | train_loss 3.6162 | lr 2.75e-04 | 8206s elapsed
+9051.4s 340 step 12750/61000 | train_loss 3.5308 | lr 2.75e-04 | 8238s elapsed
+9082.7s 341 step 12800/61000 | train_loss 3.5616 | lr 2.75e-04 | 8269s elapsed
+9114.0s 342 step 12850/61000 | train_loss 3.5975 | lr 2.75e-04 | 8300s elapsed
+9145.4s 343 step 12900/61000 | train_loss 3.5908 | lr 2.75e-04 | 8332s elapsed
+9176.7s 344 step 12950/61000 | train_loss 3.6240 | lr 2.74e-04 | 8363s elapsed
+9208.0s 345 step 13000/61000 | train_loss 3.5415 | lr 2.74e-04 | 8394s elapsed
+9218.8s 346 step 13000 | val_loss 3.5298 | val_ppl 34.12
+9220.0s 347 checkpoint saved at step 13000
+9251.3s 348 step 13050/61000 | train_loss 3.6068 | lr 2.74e-04 | 8438s elapsed
+9282.5s 349 step 13100/61000 | train_loss 3.6323 | lr 2.74e-04 | 8469s elapsed
+9313.8s 350 step 13150/61000 | train_loss 3.6761 | lr 2.74e-04 | 8500s elapsed
+9345.1s 351 step 13200/61000 | train_loss 3.6493 | lr 2.73e-04 | 8532s elapsed
+9376.4s 352 step 13250/61000 | train_loss 3.5878 | lr 2.73e-04 | 8563s elapsed
+9407.7s 353 step 13300/61000 | train_loss 3.6294 | lr 2.73e-04 | 8594s elapsed
+9439.0s 354 step 13350/61000 | train_loss 3.6623 | lr 2.73e-04 | 8625s elapsed
+9470.2s 355 step 13400/61000 | train_loss 3.5528 | lr 2.73e-04 | 8657s elapsed
+9501.6s 356 step 13450/61000 | train_loss 3.6728 | lr 2.72e-04 | 8688s elapsed
+9532.9s 357 step 13500/61000 | train_loss 3.6799 | lr 2.72e-04 | 8719s elapsed
+9543.7s 358 step 13500 | val_loss 3.5421 | val_ppl 34.54
+9544.3s 359 checkpoint saved at step 13500
+9575.6s 360 step 13550/61000 | train_loss 3.5469 | lr 2.72e-04 | 8762s elapsed
+9606.9s 361 step 13600/61000 | train_loss 3.6058 | lr 2.72e-04 | 8793s elapsed
+9638.1s 362 step 13650/61000 | train_loss 3.5640 | lr 2.71e-04 | 8825s elapsed
+9669.4s 363 step 13700/61000 | train_loss 3.5389 | lr 2.71e-04 | 8856s elapsed
+9700.7s 364 step 13750/61000 | train_loss 3.6349 | lr 2.71e-04 | 8887s elapsed
+9732.0s 365 step 13800/61000 | train_loss 3.5477 | lr 2.71e-04 | 8918s elapsed
+9763.3s 366 step 13850/61000 | train_loss 3.5214 | lr 2.71e-04 | 8950s elapsed
+9794.6s 367 step 13900/61000 | train_loss 3.6569 | lr 2.70e-04 | 8981s elapsed
+9825.9s 368 step 13950/61000 | train_loss 3.5703 | lr 2.70e-04 | 9012s elapsed
+9857.2s 369 step 14000/61000 | train_loss 3.5530 | lr 2.70e-04 | 9044s elapsed
+9868.0s 370 step 14000 | val_loss 3.5148 | val_ppl 33.61
+9869.2s 371 checkpoint saved at step 14000
+9900.4s 372 step 14050/61000 | train_loss 3.4402 | lr 2.70e-04 | 9087s elapsed
+9931.6s 373 step 14100/61000 | train_loss 3.6101 | lr 2.69e-04 | 9118s elapsed
+9962.8s 374 step 14150/61000 | train_loss 3.5613 | lr 2.69e-04 | 9149s elapsed
+9994.1s 375 step 14200/61000 | train_loss 3.5522 | lr 2.69e-04 | 9180s elapsed
+10025.4s 376 step 14250/61000 | train_loss 3.5629 | lr 2.69e-04 | 9212s elapsed
+10056.9s 377 step 14300/61000 | train_loss 3.5134 | lr 2.69e-04 | 9243s elapsed
+10088.4s 378 step 14350/61000 | train_loss 3.6075 | lr 2.68e-04 | 9275s elapsed
+10119.9s 379 step 14400/61000 | train_loss 3.5075 | lr 2.68e-04 | 9306s elapsed
+10151.4s 380 step 14450/61000 | train_loss 3.7293 | lr 2.68e-04 | 9338s elapsed
+10182.8s 381 step 14500/61000 | train_loss 3.4979 | lr 2.68e-04 | 9369s elapsed
+10193.6s 382 step 14500 | val_loss 3.4972 | val_ppl 33.02
+10194.9s 383 checkpoint saved at step 14500
+10226.2s 384 step 14550/61000 | train_loss 3.4548 | lr 2.67e-04 | 9413s elapsed
+10257.5s 385 step 14600/61000 | train_loss 3.6107 | lr 2.67e-04 | 9444s elapsed
+10288.9s 386 step 14650/61000 | train_loss 3.6044 | lr 2.67e-04 | 9475s elapsed
+10320.2s 387 step 14700/61000 | train_loss 3.5584 | lr 2.67e-04 | 9507s elapsed
+10351.5s 388 step 14750/61000 | train_loss 3.5019 | lr 2.66e-04 | 9538s elapsed
+10382.8s 389 step 14800/61000 | train_loss 3.5694 | lr 2.66e-04 | 9569s elapsed
+10414.1s 390 step 14850/61000 | train_loss 3.5649 | lr 2.66e-04 | 9600s elapsed
+10445.5s 391 step 14900/61000 | train_loss 3.5436 | lr 2.66e-04 | 9632s elapsed
+10477.0s 392 step 14950/61000 | train_loss 3.6219 | lr 2.66e-04 | 9663s elapsed
+10508.4s 393 step 15000/61000 | train_loss 3.4666 | lr 2.65e-04 | 9695s elapsed
+10519.3s 394 step 15000 | val_loss 3.4748 | val_ppl 32.29
+10520.8s 395 checkpoint saved at step 15000
+10552.3s 396 step 15050/61000 | train_loss 3.5557 | lr 2.65e-04 | 9739s elapsed
+10583.7s 397 step 15100/61000 | train_loss 3.5930 | lr 2.65e-04 | 9770s elapsed
+10615.1s 398 step 15150/61000 | train_loss 3.5679 | lr 2.65e-04 | 9801s elapsed
+10646.5s 399 step 15200/61000 | train_loss 3.7353 | lr 2.64e-04 | 9833s elapsed
+10677.8s 400 step 15250/61000 | train_loss 3.4838 | lr 2.64e-04 | 9864s elapsed
+10709.2s 401 step 15300/61000 | train_loss 3.6748 | lr 2.64e-04 | 9896s elapsed
+10740.5s 402 step 15350/61000 | train_loss 3.6688 | lr 2.64e-04 | 9927s elapsed
+10771.8s 403 step 15400/61000 | train_loss 3.6352 | lr 2.63e-04 | 9958s elapsed
+10803.1s 404 step 15450/61000 | train_loss 3.5360 | lr 2.63e-04 | 9989s elapsed
+10834.5s 405 step 15500/61000 | train_loss 3.6371 | lr 2.63e-04 | 10021s elapsed
+10845.3s 406 step 15500 | val_loss 3.4766 | val_ppl 32.35
+10845.8s 407 checkpoint saved at step 15500
+10877.1s 408 step 15550/61000 | train_loss 3.5843 | lr 2.63e-04 | 10063s elapsed
+10908.3s 409 step 15600/61000 | train_loss 3.5956 | lr 2.62e-04 | 10095s elapsed
+10939.6s 410 step 15650/61000 | train_loss 3.5800 | lr 2.62e-04 | 10126s elapsed
+10970.9s 411 step 15700/61000 | train_loss 3.5328 | lr 2.62e-04 | 10157s elapsed
+11002.2s 412 step 15750/61000 | train_loss 3.4462 | lr 2.62e-04 | 10189s elapsed
+11033.4s 413 step 15800/61000 | train_loss 3.4978 | lr 2.61e-04 | 10220s elapsed
+11064.6s 414 step 15850/61000 | train_loss 3.7484 | lr 2.61e-04 | 10251s elapsed
+11095.9s 415 step 15900/61000 | train_loss 3.5321 | lr 2.61e-04 | 10282s elapsed
+11127.2s 416 step 15950/61000 | train_loss 3.4251 | lr 2.61e-04 | 10314s elapsed
+11158.6s 417 step 16000/61000 | train_loss 3.5845 | lr 2.60e-04 | 10345s elapsed
+11169.3s 418 step 16000 | val_loss 3.4827 | val_ppl 32.55
+11170.0s 419 checkpoint saved at step 16000
+11201.2s 420 step 16050/61000 | train_loss 3.5131 | lr 2.60e-04 | 10388s elapsed
+11232.4s 421 step 16100/61000 | train_loss 3.6328 | lr 2.60e-04 | 10419s elapsed
+11263.8s 422 step 16150/61000 | train_loss 3.6420 | lr 2.60e-04 | 10450s elapsed
+11295.3s 423 step 16200/61000 | train_loss 3.5819 | lr 2.59e-04 | 10482s elapsed
+11326.8s 424 step 16250/61000 | train_loss 3.4491 | lr 2.59e-04 | 10513s elapsed
+11358.3s 425 step 16300/61000 | train_loss 3.5331 | lr 2.59e-04 | 10545s elapsed
+11389.7s 426 step 16350/61000 | train_loss 3.7008 | lr 2.59e-04 | 10576s elapsed
+11421.1s 427 step 16400/61000 | train_loss 3.6126 | lr 2.58e-04 | 10607s elapsed
+11452.4s 428 step 16450/61000 | train_loss 3.4830 | lr 2.58e-04 | 10639s elapsed
+11483.8s 429 step 16500/61000 | train_loss 3.5375 | lr 2.58e-04 | 10670s elapsed
+11494.5s 430 step 16500 | val_loss 3.4636 | val_ppl 31.93
+11495.7s 431 checkpoint saved at step 16500
+11527.0s 432 step 16550/61000 | train_loss 3.4355 | lr 2.58e-04 | 10713s elapsed
+11558.2s 433 step 16600/61000 | train_loss 3.5630 | lr 2.57e-04 | 10745s elapsed
+11589.6s 434 step 16650/61000 | train_loss 3.4839 | lr 2.57e-04 | 10776s elapsed
+11620.9s 435 step 16700/61000 | train_loss 3.5446 | lr 2.57e-04 | 10807s elapsed
+11652.3s 436 step 16750/61000 | train_loss 3.6155 | lr 2.57e-04 | 10839s elapsed
+11683.5s 437 step 16800/61000 | train_loss 3.5341 | lr 2.56e-04 | 10870s elapsed
+11714.8s 438 step 16850/61000 | train_loss 3.5318 | lr 2.56e-04 | 10901s elapsed
+11746.1s 439 step 16900/61000 | train_loss 3.5502 | lr 2.56e-04 | 10932s elapsed
+11777.3s 440 step 16950/61000 | train_loss 3.5799 | lr 2.56e-04 | 10964s elapsed
+11808.6s 441 step 17000/61000 | train_loss 3.4875 | lr 2.55e-04 | 10995s elapsed
+11819.3s 442 step 17000 | val_loss 3.4496 | val_ppl 31.49
+11820.4s 443 checkpoint saved at step 17000
+11851.8s 444 step 17050/61000 | train_loss 3.4740 | lr 2.55e-04 | 11038s elapsed
+11883.2s 445 step 17100/61000 | train_loss 3.4330 | lr 2.55e-04 | 11070s elapsed
+11914.7s 446 step 17150/61000 | train_loss 3.5944 | lr 2.55e-04 | 11101s elapsed
+11946.2s 447 step 17200/61000 | train_loss 3.4074 | lr 2.54e-04 | 11133s elapsed
+11977.7s 448 step 17250/61000 | train_loss 3.5340 | lr 2.54e-04 | 11164s elapsed
+12009.2s 449 step 17300/61000 | train_loss 3.5207 | lr 2.54e-04 | 11196s elapsed
+12040.6s 450 step 17350/61000 | train_loss 3.5508 | lr 2.53e-04 | 11227s elapsed
+12072.0s 451 step 17400/61000 | train_loss 3.4455 | lr 2.53e-04 | 11258s elapsed
+12103.3s 452 step 17450/61000 | train_loss 3.5171 | lr 2.53e-04 | 11290s elapsed
+12134.6s 453 step 17500/61000 | train_loss 3.5054 | lr 2.53e-04 | 11321s elapsed
+12145.4s 454 step 17500 | val_loss 3.4634 | val_ppl 31.92
+12145.9s 455 checkpoint saved at step 17500
+12177.2s 456 step 17550/61000 | train_loss 3.6229 | lr 2.52e-04 | 11364s elapsed
+12208.4s 457 step 17600/61000 | train_loss 3.5336 | lr 2.52e-04 | 11395s elapsed
+12239.7s 458 step 17650/61000 | train_loss 3.5738 | lr 2.52e-04 | 11426s elapsed
+12271.0s 459 step 17700/61000 | train_loss 3.5159 | lr 2.52e-04 | 11457s elapsed
+12302.2s 460 step 17750/61000 | train_loss 3.5022 | lr 2.51e-04 | 11489s elapsed
+12333.5s 461 step 17800/61000 | train_loss 3.6042 | lr 2.51e-04 | 11520s elapsed
+12364.9s 462 step 17850/61000 | train_loss 3.5125 | lr 2.51e-04 | 11551s elapsed
+12396.2s 463 step 17900/61000 | train_loss 3.4970 | lr 2.51e-04 | 11583s elapsed
+12427.5s 464 step 17950/61000 | train_loss 3.5741 | lr 2.50e-04 | 11614s elapsed
+12458.8s 465 step 18000/61000 | train_loss 3.4458 | lr 2.50e-04 | 11645s elapsed
+12469.5s 466 step 18000 | val_loss 3.4456 | val_ppl 31.36
+12470.6s 467 checkpoint saved at step 18000
+12501.8s 468 step 18050/61000 | train_loss 3.4608 | lr 2.50e-04 | 11688s elapsed
+12533.1s 469 step 18100/61000 | train_loss 3.5296 | lr 2.49e-04 | 11719s elapsed
+12564.3s 470 step 18150/61000 | train_loss 3.4511 | lr 2.49e-04 | 11751s elapsed
+12595.5s 471 step 18200/61000 | train_loss 3.5741 | lr 2.49e-04 | 11782s elapsed
+12626.8s 472 step 18250/61000 | train_loss 3.5830 | lr 2.49e-04 | 11813s elapsed
+12658.0s 473 step 18300/61000 | train_loss 3.4635 | lr 2.48e-04 | 11844s elapsed
+12689.3s 474 step 18350/61000 | train_loss 3.5524 | lr 2.48e-04 | 11876s elapsed
+12720.7s 475 step 18400/61000 | train_loss 3.3887 | lr 2.48e-04 | 11907s elapsed
+12752.2s 476 step 18450/61000 | train_loss 3.4475 | lr 2.47e-04 | 11939s elapsed
+12783.6s 477 step 18500/61000 | train_loss 3.3872 | lr 2.47e-04 | 11970s elapsed
+12794.4s 478 step 18500 | val_loss 3.4546 | val_ppl 31.65
+12795.0s 479 checkpoint saved at step 18500
+12826.4s 480 step 18550/61000 | train_loss 3.5539 | lr 2.47e-04 | 12013s elapsed
+12857.7s 481 step 18600/61000 | train_loss 3.5696 | lr 2.47e-04 | 12044s elapsed
+12889.0s 482 step 18650/61000 | train_loss 3.5364 | lr 2.46e-04 | 12075s elapsed
+12920.3s 483 step 18700/61000 | train_loss 3.5241 | lr 2.46e-04 | 12107s elapsed
+12951.6s 484 step 18750/61000 | train_loss 3.5704 | lr 2.46e-04 | 12138s elapsed
+12982.9s 485 step 18800/61000 | train_loss 3.5153 | lr 2.45e-04 | 12169s elapsed
+13014.1s 486 step 18850/61000 | train_loss 3.5063 | lr 2.45e-04 | 12200s elapsed
+13045.4s 487 step 18900/61000 | train_loss 3.3774 | lr 2.45e-04 | 12232s elapsed
+13076.6s 488 step 18950/61000 | train_loss 3.5007 | lr 2.45e-04 | 12263s elapsed
+13107.9s 489 step 19000/61000 | train_loss 3.4574 | lr 2.44e-04 | 12294s elapsed
+13118.7s 490 step 19000 | val_loss 3.4349 | val_ppl 31.03
+13119.9s 491 checkpoint saved at step 19000
+13151.1s 492 step 19050/61000 | train_loss 3.4259 | lr 2.44e-04 | 12338s elapsed
+13182.4s 493 step 19100/61000 | train_loss 3.5920 | lr 2.44e-04 | 12369s elapsed
+13213.7s 494 step 19150/61000 | train_loss 3.4602 | lr 2.43e-04 | 12400s elapsed
+13244.9s 495 step 19200/61000 | train_loss 3.4360 | lr 2.43e-04 | 12431s elapsed
+13276.2s 496 step 19250/61000 | train_loss 3.5169 | lr 2.43e-04 | 12463s elapsed
+13307.5s 497 step 19300/61000 | train_loss 3.5068 | lr 2.43e-04 | 12494s elapsed
+13338.7s 498 step 19350/61000 | train_loss 3.4940 | lr 2.42e-04 | 12525s elapsed
+13370.0s 499 step 19400/61000 | train_loss 3.3757 | lr 2.42e-04 | 12556s elapsed
+13401.3s 500 step 19450/61000 | train_loss 3.6532 | lr 2.42e-04 | 12588s elapsed
+13432.5s 501 step 19500/61000 | train_loss 3.3948 | lr 2.41e-04 | 12619s elapsed
+13443.3s 502 step 19500 | val_loss 3.4135 | val_ppl 30.37
+13444.6s 503 checkpoint saved at step 19500
+13475.7s 504 step 19550/61000 | train_loss 3.5333 | lr 2.41e-04 | 12662s elapsed
+13506.9s 505 step 19600/61000 | train_loss 3.4360 | lr 2.41e-04 | 12693s elapsed
+13538.2s 506 step 19650/61000 | train_loss 3.5254 | lr 2.41e-04 | 12725s elapsed
+13569.6s 507 step 19700/61000 | train_loss 3.4715 | lr 2.40e-04 | 12756s elapsed
+13601.1s 508 step 19750/61000 | train_loss 3.5358 | lr 2.40e-04 | 12787s elapsed
+13632.6s 509 step 19800/61000 | train_loss 3.4526 | lr 2.40e-04 | 12819s elapsed
+13664.1s 510 step 19850/61000 | train_loss 3.5476 | lr 2.39e-04 | 12850s elapsed
+13695.4s 511 step 19900/61000 | train_loss 3.4648 | lr 2.39e-04 | 12882s elapsed
+13726.8s 512 step 19950/61000 | train_loss 3.5056 | lr 2.39e-04 | 12913s elapsed
+13758.2s 513 step 20000/61000 | train_loss 3.3700 | lr 2.39e-04 | 12945s elapsed
+13768.9s 514 step 20000 | val_loss 3.4293 | val_ppl 30.85
+13769.5s 515 checkpoint saved at step 20000
+13800.8s 516 step 20050/61000 | train_loss 3.5167 | lr 2.38e-04 | 12987s elapsed
+13832.1s 517 step 20100/61000 | train_loss 3.5929 | lr 2.38e-04 | 13018s elapsed
+13863.4s 518 step 20150/61000 | train_loss 3.5548 | lr 2.38e-04 | 13050s elapsed
+13894.7s 519 step 20200/61000 | train_loss 3.5099 | lr 2.37e-04 | 13081s elapsed
+13926.1s 520 step 20250/61000 | train_loss 3.5662 | lr 2.37e-04 | 13112s elapsed
+13957.4s 521 step 20300/61000 | train_loss 3.4800 | lr 2.37e-04 | 13144s elapsed
+13988.7s 522 step 20350/61000 | train_loss 3.5111 | lr 2.36e-04 | 13175s elapsed
+14020.0s 523 step 20400/61000 | train_loss 3.5801 | lr 2.36e-04 | 13206s elapsed
+14051.3s 524 step 20450/61000 | train_loss 3.4767 | lr 2.36e-04 | 13238s elapsed
+14082.5s 525 step 20500/61000 | train_loss 3.5082 | lr 2.36e-04 | 13269s elapsed
+14093.2s 526 step 20500 | val_loss 3.4055 | val_ppl 30.13
+14094.4s 527 checkpoint saved at step 20500
+14125.5s 528 step 20550/61000 | train_loss 3.6030 | lr 2.35e-04 | 13312s elapsed
+14156.7s 529 step 20600/61000 | train_loss 3.4832 | lr 2.35e-04 | 13343s elapsed
+14187.9s 530 step 20650/61000 | train_loss 3.4245 | lr 2.35e-04 | 13374s elapsed
+14219.1s 531 step 20700/61000 | train_loss 3.4702 | lr 2.34e-04 | 13405s elapsed
+14250.4s 532 step 20750/61000 | train_loss 3.3709 | lr 2.34e-04 | 13437s elapsed
+14281.8s 533 step 20800/61000 | train_loss 3.5902 | lr 2.34e-04 | 13468s elapsed
+14313.3s 534 step 20850/61000 | train_loss 3.5175 | lr 2.33e-04 | 13500s elapsed
+14344.8s 535 step 20900/61000 | train_loss 3.4393 | lr 2.33e-04 | 13531s elapsed
+14376.2s 536 step 20950/61000 | train_loss 3.4963 | lr 2.33e-04 | 13563s elapsed
+14407.5s 537 step 21000/61000 | train_loss 3.4189 | lr 2.32e-04 | 13594s elapsed
+14418.3s 538 step 21000 | val_loss 3.3918 | val_ppl 29.72
+14419.4s 539 checkpoint saved at step 21000
+14450.7s 540 step 21050/61000 | train_loss 3.4849 | lr 2.32e-04 | 13637s elapsed
+14482.0s 541 step 21100/61000 | train_loss 3.4792 | lr 2.32e-04 | 13668s elapsed
+14513.4s 542 step 21150/61000 | train_loss 3.5825 | lr 2.32e-04 | 13700s elapsed
+14544.7s 543 step 21200/61000 | train_loss 3.4135 | lr 2.31e-04 | 13731s elapsed
+14576.0s 544 step 21250/61000 | train_loss 3.5180 | lr 2.31e-04 | 13762s elapsed
+14607.3s 545 step 21300/61000 | train_loss 3.6195 | lr 2.31e-04 | 13794s elapsed
+14638.6s 546 step 21350/61000 | train_loss 3.3422 | lr 2.30e-04 | 13825s elapsed
+14669.8s 547 step 21400/61000 | train_loss 3.5335 | lr 2.30e-04 | 13856s elapsed
+14701.1s 548 step 21450/61000 | train_loss 3.4857 | lr 2.30e-04 | 13887s elapsed
+14732.3s 549 step 21500/61000 | train_loss 3.5102 | lr 2.29e-04 | 13919s elapsed
+14743.0s 550 step 21500 | val_loss 3.3955 | val_ppl 29.83
+14743.6s 551 checkpoint saved at step 21500
+14774.8s 552 step 21550/61000 | train_loss 3.5753 | lr 2.29e-04 | 13961s elapsed
+14806.0s 553 step 21600/61000 | train_loss 3.3909 | lr 2.29e-04 | 13992s elapsed
+14837.3s 554 step 21650/61000 | train_loss 3.3884 | lr 2.28e-04 | 14024s elapsed
+14868.5s 555 step 21700/61000 | train_loss 3.6548 | lr 2.28e-04 | 14055s elapsed
+14899.7s 556 step 21750/61000 | train_loss 3.3286 | lr 2.28e-04 | 14086s elapsed
+14931.0s 557 step 21800/61000 | train_loss 3.6153 | lr 2.28e-04 | 14117s elapsed
+14962.2s 558 step 21850/61000 | train_loss 3.4808 | lr 2.27e-04 | 14149s elapsed
+14993.5s 559 step 21900/61000 | train_loss 3.4048 | lr 2.27e-04 | 14180s elapsed
+15024.8s 560 step 21950/61000 | train_loss 3.3962 | lr 2.27e-04 | 14211s elapsed
+15056.0s 561 step 22000/61000 | train_loss 3.4569 | lr 2.26e-04 | 14242s elapsed
+15066.8s 562 step 22000 | val_loss 3.3959 | val_ppl 29.84
+15067.4s 563 checkpoint saved at step 22000
+15098.7s 564 step 22050/61000 | train_loss 3.3654 | lr 2.26e-04 | 14285s elapsed
+15129.8s 565 step 22100/61000 | train_loss 3.5990 | lr 2.26e-04 | 14316s elapsed
+15161.1s 566 step 22150/61000 | train_loss 3.4684 | lr 2.25e-04 | 14347s elapsed
+15192.3s 567 step 22200/61000 | train_loss 3.4492 | lr 2.25e-04 | 14379s elapsed
+15223.5s 568 step 22250/61000 | train_loss 3.4415 | lr 2.25e-04 | 14410s elapsed
+15254.8s 569 step 22300/61000 | train_loss 3.5036 | lr 2.24e-04 | 14441s elapsed
+15286.0s 570 step 22350/61000 | train_loss 3.4359 | lr 2.24e-04 | 14472s elapsed
+15317.3s 571 step 22400/61000 | train_loss 3.5130 | lr 2.24e-04 | 14504s elapsed
+15348.5s 572 step 22450/61000 | train_loss 3.3588 | lr 2.23e-04 | 14535s elapsed
+15379.8s 573 step 22500/61000 | train_loss 3.4222 | lr 2.23e-04 | 14566s elapsed
+15390.5s 574 step 22500 | val_loss 3.3958 | val_ppl 29.84
+15391.1s 575 checkpoint saved at step 22500
+15422.3s 576 step 22550/61000 | train_loss 3.4575 | lr 2.23e-04 | 14609s elapsed
+15453.7s 577 step 22600/61000 | train_loss 3.3063 | lr 2.22e-04 | 14640s elapsed
+15484.8s 578 step 22650/61000 | train_loss 3.4072 | lr 2.22e-04 | 14671s elapsed
+15516.1s 579 step 22700/61000 | train_loss 3.3045 | lr 2.22e-04 | 14702s elapsed
+15547.4s 580 step 22750/61000 | train_loss 3.4136 | lr 2.22e-04 | 14734s elapsed
+15578.7s 581 step 22800/61000 | train_loss 3.4640 | lr 2.21e-04 | 14765s elapsed
+15610.0s 582 step 22850/61000 | train_loss 3.4781 | lr 2.21e-04 | 14796s elapsed
+15641.4s 583 step 22900/61000 | train_loss 3.4843 | lr 2.21e-04 | 14828s elapsed
+15672.7s 584 step 22950/61000 | train_loss 3.5094 | lr 2.20e-04 | 14859s elapsed
+15704.1s 585 step 23000/61000 | train_loss 3.4239 | lr 2.20e-04 | 14890s elapsed
+15714.8s 586 step 23000 | val_loss 3.3696 | val_ppl 29.07
+15716.0s 587 checkpoint saved at step 23000
+15747.3s 588 step 23050/61000 | train_loss 3.5074 | lr 2.20e-04 | 14934s elapsed
+15778.6s 589 step 23100/61000 | train_loss 3.5614 | lr 2.19e-04 | 14965s elapsed
+15810.0s 590 step 23150/61000 | train_loss 3.3820 | lr 2.19e-04 | 14996s elapsed
+15841.4s 591 step 23200/61000 | train_loss 3.3505 | lr 2.19e-04 | 15028s elapsed
+15872.8s 592 step 23250/61000 | train_loss 3.3626 | lr 2.18e-04 | 15059s elapsed
+15904.2s 593 step 23300/61000 | train_loss 3.2790 | lr 2.18e-04 | 15091s elapsed
+15935.6s 594 step 23350/61000 | train_loss 3.5186 | lr 2.18e-04 | 15122s elapsed
+15966.9s 595 step 23400/61000 | train_loss 3.4473 | lr 2.17e-04 | 15153s elapsed
+15998.3s 596 step 23450/61000 | train_loss 3.4212 | lr 2.17e-04 | 15185s elapsed
+16029.7s 597 step 23500/61000 | train_loss 3.4732 | lr 2.17e-04 | 15216s elapsed
+16040.5s 598 step 23500 | val_loss 3.3733 | val_ppl 29.17
+16041.0s 599 checkpoint saved at step 23500
+16072.4s 600 step 23550/61000 | train_loss 3.4364 | lr 2.16e-04 | 15259s elapsed
+16103.8s 601 step 23600/61000 | train_loss 3.4659 | lr 2.16e-04 | 15290s elapsed
+16135.3s 602 step 23650/61000 | train_loss 3.4446 | lr 2.16e-04 | 15322s elapsed
+16166.7s 603 step 23700/61000 | train_loss 3.4204 | lr 2.15e-04 | 15353s elapsed
+16198.2s 604 step 23750/61000 | train_loss 3.3967 | lr 2.15e-04 | 15385s elapsed
+16229.6s 605 step 23800/61000 | train_loss 3.3600 | lr 2.15e-04 | 15416s elapsed
+16261.1s 606 step 23850/61000 | train_loss 3.4772 | lr 2.14e-04 | 15447s elapsed
+16292.6s 607 step 23900/61000 | train_loss 3.4464 | lr 2.14e-04 | 15479s elapsed
+16324.0s 608 step 23950/61000 | train_loss 3.3767 | lr 2.14e-04 | 15510s elapsed
+16355.5s 609 step 24000/61000 | train_loss 3.4371 | lr 2.13e-04 | 15542s elapsed
+16366.3s 610 step 24000 | val_loss 3.3626 | val_ppl 28.87
+16367.4s 611 checkpoint saved at step 24000
+16398.8s 612 step 24050/61000 | train_loss 3.4205 | lr 2.13e-04 | 15585s elapsed
+16430.2s 613 step 24100/61000 | train_loss 3.4841 | lr 2.13e-04 | 15617s elapsed
+16461.6s 614 step 24150/61000 | train_loss 3.5333 | lr 2.12e-04 | 15648s elapsed
+16492.9s 615 step 24200/61000 | train_loss 3.4286 | lr 2.12e-04 | 15679s elapsed
+16524.3s 616 step 24250/61000 | train_loss 3.4773 | lr 2.12e-04 | 15711s elapsed
+16555.6s 617 step 24300/61000 | train_loss 3.4790 | lr 2.11e-04 | 15742s elapsed
+16587.0s 618 step 24350/61000 | train_loss 3.5380 | lr 2.11e-04 | 15773s elapsed
+16618.4s 619 step 24400/61000 | train_loss 3.3594 | lr 2.11e-04 | 15805s elapsed
+16649.7s 620 step 24450/61000 | train_loss 3.4370 | lr 2.10e-04 | 15836s elapsed
+16681.1s 621 step 24500/61000 | train_loss 3.5133 | lr 2.10e-04 | 15867s elapsed
+16691.9s 622 step 24500 | val_loss 3.3847 | val_ppl 29.51
+16692.5s 623 checkpoint saved at step 24500
+16723.9s 624 step 24550/61000 | train_loss 3.4209 | lr 2.10e-04 | 15910s elapsed
+16755.3s 625 step 24600/61000 | train_loss 3.3110 | lr 2.09e-04 | 15942s elapsed
+16786.6s 626 step 24650/61000 | train_loss 3.3798 | lr 2.09e-04 | 15973s elapsed
+16818.0s 627 step 24700/61000 | train_loss 3.4956 | lr 2.09e-04 | 16004s elapsed
+16849.4s 628 step 24750/61000 | train_loss 3.5034 | lr 2.08e-04 | 16036s elapsed
+16880.8s 629 step 24800/61000 | train_loss 3.4563 | lr 2.08e-04 | 16067s elapsed
+16912.2s 630 step 24850/61000 | train_loss 3.5966 | lr 2.08e-04 | 16099s elapsed
+16943.6s 631 step 24900/61000 | train_loss 3.4978 | lr 2.07e-04 | 16130s elapsed
+16975.0s 632 step 24950/61000 | train_loss 3.4130 | lr 2.07e-04 | 16161s elapsed
+17006.4s 633 step 25000/61000 | train_loss 3.5595 | lr 2.07e-04 | 16193s elapsed
+17017.2s 634 step 25000 | val_loss 3.3631 | val_ppl 28.88
+17017.7s 635 checkpoint saved at step 25000
+17049.1s 636 step 25050/61000 | train_loss 3.5435 | lr 2.06e-04 | 16235s elapsed
+17080.5s 637 step 25100/61000 | train_loss 3.5435 | lr 2.06e-04 | 16267s elapsed
+17111.9s 638 step 25150/61000 | train_loss 3.5527 | lr 2.06e-04 | 16298s elapsed
+17143.3s 639 step 25200/61000 | train_loss 3.3875 | lr 2.05e-04 | 16330s elapsed
+17174.7s 640 step 25250/61000 | train_loss 3.3721 | lr 2.05e-04 | 16361s elapsed
+17206.1s 641 step 25300/61000 | train_loss 3.3781 | lr 2.05e-04 | 16392s elapsed
+17237.5s 642 step 25350/61000 | train_loss 3.4520 | lr 2.04e-04 | 16424s elapsed
+17268.9s 643 step 25400/61000 | train_loss 3.4315 | lr 2.04e-04 | 16455s elapsed
+17300.2s 644 step 25450/61000 | train_loss 3.4148 | lr 2.04e-04 | 16487s elapsed
+17331.5s 645 step 25500/61000 | train_loss 3.3001 | lr 2.03e-04 | 16518s elapsed
+17342.2s 646 step 25500 | val_loss 3.3537 | val_ppl 28.61
+17343.3s 647 checkpoint saved at step 25500
+17374.6s 648 step 25550/61000 | train_loss 3.3432 | lr 2.03e-04 | 16561s elapsed
+17405.9s 649 step 25600/61000 | train_loss 3.4308 | lr 2.03e-04 | 16592s elapsed
+17437.1s 650 step 25650/61000 | train_loss 3.5353 | lr 2.02e-04 | 16623s elapsed
+17468.4s 651 step 25700/61000 | train_loss 3.4421 | lr 2.02e-04 | 16655s elapsed
+17499.7s 652 step 25750/61000 | train_loss 3.3447 | lr 2.02e-04 | 16686s elapsed
+17530.9s 653 step 25800/61000 | train_loss 3.3994 | lr 2.01e-04 | 16717s elapsed
+17562.2s 654 step 25850/61000 | train_loss 3.4649 | lr 2.01e-04 | 16749s elapsed
+17593.5s 655 step 25900/61000 | train_loss 3.3683 | lr 2.01e-04 | 16780s elapsed
+17624.8s 656 step 25950/61000 | train_loss 3.5184 | lr 2.00e-04 | 16811s elapsed
+17656.1s 657 step 26000/61000 | train_loss 3.4699 | lr 2.00e-04 | 16842s elapsed
+17666.8s 658 step 26000 | val_loss 3.3495 | val_ppl 28.49
+17667.9s 659 checkpoint saved at step 26000
+17699.1s 660 step 26050/61000 | train_loss 3.4374 | lr 2.00e-04 | 16885s elapsed
+17730.3s 661 step 26100/61000 | train_loss 3.3453 | lr 1.99e-04 | 16917s elapsed
+17761.5s 662 step 26150/61000 | train_loss 3.3811 | lr 1.99e-04 | 16948s elapsed
+17792.7s 663 step 26200/61000 | train_loss 3.4002 | lr 1.99e-04 | 16979s elapsed
+17823.8s 664 step 26250/61000 | train_loss 3.3331 | lr 1.98e-04 | 17010s elapsed
+17855.0s 665 step 26300/61000 | train_loss 3.3644 | lr 1.98e-04 | 17041s elapsed
+17886.2s 666 step 26350/61000 | train_loss 3.4425 | lr 1.98e-04 | 17073s elapsed
+17917.5s 667 step 26400/61000 | train_loss 3.4808 | lr 1.97e-04 | 17104s elapsed
+17948.9s 668 step 26450/61000 | train_loss 3.4895 | lr 1.97e-04 | 17135s elapsed
+17980.3s 669 step 26500/61000 | train_loss 3.3813 | lr 1.97e-04 | 17167s elapsed
+17991.1s 670 step 26500 | val_loss 3.3353 | val_ppl 28.09
+17992.3s 671 checkpoint saved at step 26500
+18023.6s 672 step 26550/61000 | train_loss 3.4538 | lr 1.96e-04 | 17210s elapsed
+18054.9s 673 step 26600/61000 | train_loss 3.3954 | lr 1.96e-04 | 17241s elapsed
+18086.2s 674 step 26650/61000 | train_loss 3.4519 | lr 1.95e-04 | 17273s elapsed
+18117.5s 675 step 26700/61000 | train_loss 3.3943 | lr 1.95e-04 | 17304s elapsed
+18148.8s 676 step 26750/61000 | train_loss 3.5116 | lr 1.95e-04 | 17335s elapsed
+18180.0s 677 step 26800/61000 | train_loss 3.4070 | lr 1.94e-04 | 17366s elapsed
+18211.3s 678 step 26850/61000 | train_loss 3.4562 | lr 1.94e-04 | 17398s elapsed
+18242.5s 679 step 26900/61000 | train_loss 3.5949 | lr 1.94e-04 | 17429s elapsed
+18273.8s 680 step 26950/61000 | train_loss 3.3724 | lr 1.93e-04 | 17460s elapsed
+18305.0s 681 step 27000/61000 | train_loss 3.3444 | lr 1.93e-04 | 17491s elapsed
+18315.7s 682 step 27000 | val_loss 3.3323 | val_ppl 28.00
+18316.9s 683 checkpoint saved at step 27000
+18348.0s 684 step 27050/61000 | train_loss 3.4125 | lr 1.93e-04 | 17534s elapsed
+18379.3s 685 step 27100/61000 | train_loss 3.5267 | lr 1.92e-04 | 17566s elapsed
+18410.5s 686 step 27150/61000 | train_loss 3.4042 | lr 1.92e-04 | 17597s elapsed
+18441.7s 687 step 27200/61000 | train_loss 3.4254 | lr 1.92e-04 | 17628s elapsed
+18473.0s 688 step 27250/61000 | train_loss 3.3464 | lr 1.91e-04 | 17659s elapsed
+18504.3s 689 step 27300/61000 | train_loss 3.5324 | lr 1.91e-04 | 17691s elapsed
+18535.5s 690 step 27350/61000 | train_loss 3.3463 | lr 1.91e-04 | 17722s elapsed
+18566.8s 691 step 27400/61000 | train_loss 3.4444 | lr 1.90e-04 | 17753s elapsed
+18598.0s 692 step 27450/61000 | train_loss 3.5250 | lr 1.90e-04 | 17784s elapsed
+18629.4s 693 step 27500/61000 | train_loss 3.5552 | lr 1.90e-04 | 17816s elapsed
+18640.1s 694 step 27500 | val_loss 3.3303 | val_ppl 27.95
+18641.3s 695 checkpoint saved at step 27500
+18672.5s 696 step 27550/61000 | train_loss 3.4465 | lr 1.89e-04 | 17859s elapsed
+18703.7s 697 step 27600/61000 | train_loss 3.3853 | lr 1.89e-04 | 17890s elapsed
+18734.9s 698 step 27650/61000 | train_loss 3.2979 | lr 1.89e-04 | 17921s elapsed
+18766.1s 699 step 27700/61000 | train_loss 3.4015 | lr 1.88e-04 | 17952s elapsed
+18797.3s 700 step 27750/61000 | train_loss 3.5631 | lr 1.88e-04 | 17984s elapsed
+18828.5s 701 step 27800/61000 | train_loss 3.4402 | lr 1.88e-04 | 18015s elapsed
+18859.7s 702 step 27850/61000 | train_loss 3.5304 | lr 1.87e-04 | 18046s elapsed
+18890.9s 703 step 27900/61000 | train_loss 3.4245 | lr 1.87e-04 | 18077s elapsed
+18922.2s 704 step 27950/61000 | train_loss 3.4869 | lr 1.86e-04 | 18109s elapsed
+18953.4s 705 step 28000/61000 | train_loss 3.4002 | lr 1.86e-04 | 18140s elapsed
+18964.1s 706 step 28000 | val_loss 3.3318 | val_ppl 27.99
+18964.7s 707 checkpoint saved at step 28000
+18995.9s 708 step 28050/61000 | train_loss 3.4382 | lr 1.86e-04 | 18182s elapsed
+19027.1s 709 step 28100/61000 | train_loss 3.3800 | lr 1.85e-04 | 18213s elapsed
+19058.3s 710 step 28150/61000 | train_loss 3.4943 | lr 1.85e-04 | 18245s elapsed
+19089.5s 711 step 28200/61000 | train_loss 3.5233 | lr 1.85e-04 | 18276s elapsed
+19120.7s 712 step 28250/61000 | train_loss 3.4276 | lr 1.84e-04 | 18307s elapsed
+19152.0s 713 step 28300/61000 | train_loss 3.3859 | lr 1.84e-04 | 18338s elapsed
+19183.3s 714 step 28350/61000 | train_loss 3.4518 | lr 1.84e-04 | 18370s elapsed
+19214.5s 715 step 28400/61000 | train_loss 3.4476 | lr 1.83e-04 | 18401s elapsed
+19245.7s 716 step 28450/61000 | train_loss 3.3763 | lr 1.83e-04 | 18432s elapsed
+19276.9s 717 step 28500/61000 | train_loss 3.4510 | lr 1.83e-04 | 18463s elapsed
+19287.6s 718 step 28500 | val_loss 3.3346 | val_ppl 28.07
+19288.2s 719 checkpoint saved at step 28500
+19319.4s 720 step 28550/61000 | train_loss 3.4653 | lr 1.82e-04 | 18506s elapsed
+19350.6s 721 step 28600/61000 | train_loss 3.3468 | lr 1.82e-04 | 18537s elapsed
+19381.8s 722 step 28650/61000 | train_loss 3.3267 | lr 1.82e-04 | 18568s elapsed
+19413.0s 723 step 28700/61000 | train_loss 3.3424 | lr 1.81e-04 | 18599s elapsed
+19444.1s 724 step 28750/61000 | train_loss 3.4322 | lr 1.81e-04 | 18630s elapsed
+19475.3s 725 step 28800/61000 | train_loss 3.4736 | lr 1.81e-04 | 18662s elapsed
+19506.5s 726 step 28850/61000 | train_loss 3.4383 | lr 1.80e-04 | 18693s elapsed
+19537.7s 727 step 28900/61000 | train_loss 3.3535 | lr 1.80e-04 | 18724s elapsed
+19568.9s 728 step 28950/61000 | train_loss 3.4639 | lr 1.79e-04 | 18755s elapsed
+19600.1s 729 step 29000/61000 | train_loss 3.3972 | lr 1.79e-04 | 18786s elapsed
+19610.8s 730 step 29000 | val_loss 3.3178 | val_ppl 27.60
+19611.9s 731 checkpoint saved at step 29000
+19643.1s 732 step 29050/61000 | train_loss 3.3613 | lr 1.79e-04 | 18829s elapsed
+19674.3s 733 step 29100/61000 | train_loss 3.4664 | lr 1.78e-04 | 18861s elapsed
+19705.5s 734 step 29150/61000 | train_loss 3.4522 | lr 1.78e-04 | 18892s elapsed
+19736.7s 735 step 29200/61000 | train_loss 3.5299 | lr 1.78e-04 | 18923s elapsed
+19767.9s 736 step 29250/61000 | train_loss 3.4111 | lr 1.77e-04 | 18954s elapsed
+19799.2s 737 step 29300/61000 | train_loss 3.4796 | lr 1.77e-04 | 18986s elapsed
+19830.5s 738 step 29350/61000 | train_loss 3.4362 | lr 1.77e-04 | 19017s elapsed
+19861.8s 739 step 29400/61000 | train_loss 3.4160 | lr 1.76e-04 | 19048s elapsed
+19893.0s 740 step 29450/61000 | train_loss 3.4758 | lr 1.76e-04 | 19079s elapsed
+19924.3s 741 step 29500/61000 | train_loss 3.4478 | lr 1.76e-04 | 19111s elapsed
+19935.1s 742 step 29500 | val_loss 3.3347 | val_ppl 28.07
+19935.6s 743 checkpoint saved at step 29500
+19966.9s 744 step 29550/61000 | train_loss 3.4107 | lr 1.75e-04 | 19153s elapsed
+19998.2s 745 step 29600/61000 | train_loss 3.4141 | lr 1.75e-04 | 19185s elapsed
+20029.5s 746 step 29650/61000 | train_loss 3.4965 | lr 1.75e-04 | 19216s elapsed
+20060.7s 747 step 29700/61000 | train_loss 3.2847 | lr 1.74e-04 | 19247s elapsed
+20092.0s 748 step 29750/61000 | train_loss 3.4234 | lr 1.74e-04 | 19278s elapsed
+20123.4s 749 step 29800/61000 | train_loss 3.4112 | lr 1.73e-04 | 19310s elapsed
+20154.7s 750 step 29850/61000 | train_loss 3.3822 | lr 1.73e-04 | 19341s elapsed
+20186.0s 751 step 29900/61000 | train_loss 3.5406 | lr 1.73e-04 | 19372s elapsed
+20217.3s 752 step 29950/61000 | train_loss 3.3667 | lr 1.72e-04 | 19404s elapsed
+20248.5s 753 step 30000/61000 | train_loss 3.5003 | lr 1.72e-04 | 19435s elapsed
+20259.3s 754 step 30000 | val_loss 3.3081 | val_ppl 27.33
+20260.4s 755 checkpoint saved at step 30000
+20291.6s 756 step 30050/61000 | train_loss 3.4689 | lr 1.72e-04 | 19478s elapsed
+20322.9s 757 step 30100/61000 | train_loss 3.3283 | lr 1.71e-04 | 19509s elapsed
+20354.1s 758 step 30150/61000 | train_loss 3.2831 | lr 1.71e-04 | 19540s elapsed
+20385.3s 759 step 30200/61000 | train_loss 3.3898 | lr 1.71e-04 | 19572s elapsed
+20416.6s 760 step 30250/61000 | train_loss 3.4045 | lr 1.70e-04 | 19603s elapsed
+20447.9s 761 step 30300/61000 | train_loss 3.4630 | lr 1.70e-04 | 19634s elapsed
+20479.2s 762 step 30350/61000 | train_loss 3.3850 | lr 1.70e-04 | 19666s elapsed
+20510.5s 763 step 30400/61000 | train_loss 3.3293 | lr 1.69e-04 | 19697s elapsed
+20541.8s 764 step 30450/61000 | train_loss 3.5099 | lr 1.69e-04 | 19728s elapsed
+20573.1s 765 step 30500/61000 | train_loss 3.4469 | lr 1.69e-04 | 19759s elapsed
+20583.9s 766 step 30500 | val_loss 3.3060 | val_ppl 27.28
+20585.0s 767 checkpoint saved at step 30500
+20616.3s 768 step 30550/61000 | train_loss 3.3598 | lr 1.68e-04 | 19803s elapsed
+20647.5s 769 step 30600/61000 | train_loss 3.3476 | lr 1.68e-04 | 19834s elapsed
+20678.8s 770 step 30650/61000 | train_loss 3.3631 | lr 1.67e-04 | 19865s elapsed
+20710.1s 771 step 30700/61000 | train_loss 3.5665 | lr 1.67e-04 | 19896s elapsed
+20741.4s 772 step 30750/61000 | train_loss 3.3905 | lr 1.67e-04 | 19928s elapsed
+20772.8s 773 step 30800/61000 | train_loss 3.2796 | lr 1.66e-04 | 19959s elapsed
+20804.1s 774 step 30850/61000 | train_loss 3.4277 | lr 1.66e-04 | 19990s elapsed
+20835.4s 775 step 30900/61000 | train_loss 3.2491 | lr 1.66e-04 | 20022s elapsed
+20866.8s 776 step 30950/61000 | train_loss 3.4217 | lr 1.65e-04 | 20053s elapsed
+20898.1s 777 step 31000/61000 | train_loss 3.4468 | lr 1.65e-04 | 20084s elapsed
+20908.8s 778 step 31000 | val_loss 3.3163 | val_ppl 27.56
+20909.4s 779 checkpoint saved at step 31000
+20940.7s 780 step 31050/61000 | train_loss 3.2120 | lr 1.65e-04 | 20127s elapsed
+20972.1s 781 step 31100/61000 | train_loss 3.4437 | lr 1.64e-04 | 20158s elapsed
+21003.4s 782 step 31150/61000 | train_loss 3.3749 | lr 1.64e-04 | 20190s elapsed
+21034.7s 783 step 31200/61000 | train_loss 3.3006 | lr 1.64e-04 | 20221s elapsed
+21066.0s 784 step 31250/61000 | train_loss 3.4544 | lr 1.63e-04 | 20252s elapsed
+21097.2s 785 step 31300/61000 | train_loss 3.5488 | lr 1.63e-04 | 20284s elapsed
+21128.4s 786 step 31350/61000 | train_loss 3.5674 | lr 1.63e-04 | 20315s elapsed
+21159.7s 787 step 31400/61000 | train_loss 3.4034 | lr 1.62e-04 | 20346s elapsed
+21191.0s 788 step 31450/61000 | train_loss 3.2520 | lr 1.62e-04 | 20377s elapsed
+21222.2s 789 step 31500/61000 | train_loss 3.3037 | lr 1.61e-04 | 20409s elapsed
+21233.0s 790 step 31500 | val_loss 3.3129 | val_ppl 27.46
+21233.5s 791 checkpoint saved at step 31500
+21264.8s 792 step 31550/61000 | train_loss 3.4241 | lr 1.61e-04 | 20451s elapsed
+21296.0s 793 step 31600/61000 | train_loss 3.4459 | lr 1.61e-04 | 20482s elapsed
+21327.3s 794 step 31650/61000 | train_loss 3.2416 | lr 1.60e-04 | 20514s elapsed
+21358.5s 795 step 31700/61000 | train_loss 3.4047 | lr 1.60e-04 | 20545s elapsed
+21389.9s 796 step 31750/61000 | train_loss 3.1509 | lr 1.60e-04 | 20576s elapsed
+21421.3s 797 step 31800/61000 | train_loss 3.4133 | lr 1.59e-04 | 20608s elapsed
+21452.7s 798 step 31850/61000 | train_loss 3.3292 | lr 1.59e-04 | 20639s elapsed
+21484.1s 799 step 31900/61000 | train_loss 3.4293 | lr 1.59e-04 | 20670s elapsed
+21515.3s 800 step 31950/61000 | train_loss 3.4530 | lr 1.58e-04 | 20702s elapsed
+21546.6s 801 step 32000/61000 | train_loss 3.2980 | lr 1.58e-04 | 20733s elapsed
+21557.3s 802 step 32000 | val_loss 3.2964 | val_ppl 27.02
+21558.5s 803 checkpoint saved at step 32000
+21589.6s 804 step 32050/61000 | train_loss 3.1523 | lr 1.58e-04 | 20776s elapsed
+21620.7s 805 step 32100/61000 | train_loss 3.3664 | lr 1.57e-04 | 20807s elapsed
+21651.9s 806 step 32150/61000 | train_loss 3.3057 | lr 1.57e-04 | 20838s elapsed
+21683.2s 807 step 32200/61000 | train_loss 3.4343 | lr 1.57e-04 | 20870s elapsed
+21714.5s 808 step 32250/61000 | train_loss 3.3965 | lr 1.56e-04 | 20901s elapsed
+21745.9s 809 step 32300/61000 | train_loss 3.2851 | lr 1.56e-04 | 20932s elapsed
+21777.2s 810 step 32350/61000 | train_loss 3.2747 | lr 1.55e-04 | 20964s elapsed
+21808.6s 811 step 32400/61000 | train_loss 3.3448 | lr 1.55e-04 | 20995s elapsed
+21840.0s 812 step 32450/61000 | train_loss 3.3946 | lr 1.55e-04 | 21026s elapsed
+21871.4s 813 step 32500/61000 | train_loss 3.3627 | lr 1.54e-04 | 21058s elapsed
+21882.1s 814 step 32500 | val_loss 3.2878 | val_ppl 26.78
+21883.3s 815 checkpoint saved at step 32500
+21914.6s 816 step 32550/61000 | train_loss 3.5016 | lr 1.54e-04 | 21101s elapsed
+21945.9s 817 step 32600/61000 | train_loss 3.3399 | lr 1.54e-04 | 21132s elapsed
+21977.2s 818 step 32650/61000 | train_loss 3.3983 | lr 1.53e-04 | 21164s elapsed
+22008.5s 819 step 32700/61000 | train_loss 3.3257 | lr 1.53e-04 | 21195s elapsed
+22039.9s 820 step 32750/61000 | train_loss 3.3424 | lr 1.53e-04 | 21226s elapsed
+22071.3s 821 step 32800/61000 | train_loss 3.4996 | lr 1.52e-04 | 21258s elapsed
+22102.6s 822 step 32850/61000 | train_loss 3.3854 | lr 1.52e-04 | 21289s elapsed
+22133.8s 823 step 32900/61000 | train_loss 3.3949 | lr 1.52e-04 | 21320s elapsed
+22165.0s 824 step 32950/61000 | train_loss 3.3921 | lr 1.51e-04 | 21351s elapsed
+22196.2s 825 step 33000/61000 | train_loss 3.4118 | lr 1.51e-04 | 21383s elapsed
+22207.0s 826 step 33000 | val_loss 3.2677 | val_ppl 26.25
+22208.1s 827 checkpoint saved at step 33000
+22239.3s 828 step 33050/61000 | train_loss 3.4191 | lr 1.51e-04 | 21426s elapsed
+22270.4s 829 step 33100/61000 | train_loss 3.4070 | lr 1.50e-04 | 21457s elapsed
+22301.5s 830 step 33150/61000 | train_loss 3.3656 | lr 1.50e-04 | 21488s elapsed
+22332.7s 831 step 33200/61000 | train_loss 3.3145 | lr 1.49e-04 | 21519s elapsed
+22363.9s 832 step 33250/61000 | train_loss 3.3246 | lr 1.49e-04 | 21550s elapsed
+22395.2s 833 step 33300/61000 | train_loss 3.4451 | lr 1.49e-04 | 21582s elapsed
+22426.5s 834 step 33350/61000 | train_loss 3.4262 | lr 1.48e-04 | 21613s elapsed
+22457.9s 835 step 33400/61000 | train_loss 3.3283 | lr 1.48e-04 | 21644s elapsed
+22489.3s 836 step 33450/61000 | train_loss 3.4240 | lr 1.48e-04 | 21676s elapsed
+22520.7s 837 step 33500/61000 | train_loss 3.2938 | lr 1.47e-04 | 21707s elapsed
+22531.5s 838 step 33500 | val_loss 3.2881 | val_ppl 26.79
+22532.1s 839 checkpoint saved at step 33500
+22563.5s 840 step 33550/61000 | train_loss 3.3892 | lr 1.47e-04 | 21750s elapsed
+22594.9s 841 step 33600/61000 | train_loss 3.3052 | lr 1.47e-04 | 21781s elapsed
+22626.3s 842 step 33650/61000 | train_loss 3.2887 | lr 1.46e-04 | 21813s elapsed
+22657.7s 843 step 33700/61000 | train_loss 3.3052 | lr 1.46e-04 | 21844s elapsed
+22689.0s 844 step 33750/61000 | train_loss 3.4394 | lr 1.46e-04 | 21875s elapsed
+22720.4s 845 step 33800/61000 | train_loss 3.3753 | lr 1.45e-04 | 21907s elapsed
+22751.7s 846 step 33850/61000 | train_loss 3.3821 | lr 1.45e-04 | 21938s elapsed
+22783.1s 847 step 33900/61000 | train_loss 3.4157 | lr 1.45e-04 | 21969s elapsed
+22814.4s 848 step 33950/61000 | train_loss 3.4186 | lr 1.44e-04 | 22001s elapsed
+22845.7s 849 step 34000/61000 | train_loss 3.4308 | lr 1.44e-04 | 22032s elapsed
+22856.5s 850 step 34000 | val_loss 3.2820 | val_ppl 26.63
+22857.0s 851 checkpoint saved at step 34000
+22888.4s 852 step 34050/61000 | train_loss 3.4686 | lr 1.44e-04 | 22075s elapsed
+22919.7s 853 step 34100/61000 | train_loss 3.3356 | lr 1.43e-04 | 22106s elapsed
+22951.0s 854 step 34150/61000 | train_loss 3.3373 | lr 1.43e-04 | 22137s elapsed
+22982.3s 855 step 34200/61000 | train_loss 3.3998 | lr 1.42e-04 | 22169s elapsed
+23013.7s 856 step 34250/61000 | train_loss 3.3573 | lr 1.42e-04 | 22200s elapsed
+23045.0s 857 step 34300/61000 | train_loss 3.4187 | lr 1.42e-04 | 22231s elapsed
+23076.4s 858 step 34350/61000 | train_loss 3.3683 | lr 1.41e-04 | 22263s elapsed
+23107.7s 859 step 34400/61000 | train_loss 3.5265 | lr 1.41e-04 | 22294s elapsed
+23139.1s 860 step 34450/61000 | train_loss 3.3271 | lr 1.41e-04 | 22325s elapsed
+23170.4s 861 step 34500/61000 | train_loss 3.3443 | lr 1.40e-04 | 22357s elapsed
+23181.2s 862 step 34500 | val_loss 3.2766 | val_ppl 26.49
+23181.9s 863 checkpoint saved at step 34500
+23213.2s 864 step 34550/61000 | train_loss 3.4845 | lr 1.40e-04 | 22400s elapsed
+23244.6s 865 step 34600/61000 | train_loss 3.2059 | lr 1.40e-04 | 22431s elapsed
+23275.9s 866 step 34650/61000 | train_loss 3.2846 | lr 1.39e-04 | 22462s elapsed
+23307.2s 867 step 34700/61000 | train_loss 3.4622 | lr 1.39e-04 | 22494s elapsed
+23338.5s 868 step 34750/61000 | train_loss 3.3318 | lr 1.39e-04 | 22525s elapsed
+23369.9s 869 step 34800/61000 | train_loss 3.2744 | lr 1.38e-04 | 22556s elapsed
+23401.2s 870 step 34850/61000 | train_loss 3.3896 | lr 1.38e-04 | 22588s elapsed
+23432.5s 871 step 34900/61000 | train_loss 3.2421 | lr 1.38e-04 | 22619s elapsed
+23463.9s 872 step 34950/61000 | train_loss 3.2920 | lr 1.37e-04 | 22650s elapsed
+23495.2s 873 step 35000/61000 | train_loss 3.4303 | lr 1.37e-04 | 22682s elapsed
+23506.0s 874 step 35000 | val_loss 3.2737 | val_ppl 26.41
+23506.7s 875 checkpoint saved at step 35000
+23538.0s 876 step 35050/61000 | train_loss 3.2529 | lr 1.37e-04 | 22724s elapsed
+23569.4s 877 step 35100/61000 | train_loss 3.3863 | lr 1.36e-04 | 22756s elapsed
+23600.7s 878 step 35150/61000 | train_loss 3.3193 | lr 1.36e-04 | 22787s elapsed
+23632.1s 879 step 35200/61000 | train_loss 3.3381 | lr 1.36e-04 | 22818s elapsed
+23663.4s 880 step 35250/61000 | train_loss 3.3574 | lr 1.35e-04 | 22850s elapsed
+23694.7s 881 step 35300/61000 | train_loss 3.2367 | lr 1.35e-04 | 22881s elapsed
+23726.1s 882 step 35350/61000 | train_loss 3.2620 | lr 1.35e-04 | 22912s elapsed
+23757.5s 883 step 35400/61000 | train_loss 3.3371 | lr 1.34e-04 | 22944s elapsed
+23788.8s 884 step 35450/61000 | train_loss 3.3639 | lr 1.34e-04 | 22975s elapsed
+23820.2s 885 step 35500/61000 | train_loss 3.4337 | lr 1.33e-04 | 23007s elapsed
+23830.9s 886 step 35500 | val_loss 3.2645 | val_ppl 26.17
+23832.1s 887 checkpoint saved at step 35500
+23863.4s 888 step 35550/61000 | train_loss 3.4025 | lr 1.33e-04 | 23050s elapsed
+23894.7s 889 step 35600/61000 | train_loss 3.2996 | lr 1.33e-04 | 23081s elapsed
+23925.9s 890 step 35650/61000 | train_loss 3.4666 | lr 1.32e-04 | 23112s elapsed
+23957.2s 891 step 35700/61000 | train_loss 3.2218 | lr 1.32e-04 | 23144s elapsed
+23988.4s 892 step 35750/61000 | train_loss 3.2449 | lr 1.32e-04 | 23175s elapsed
+24019.7s 893 step 35800/61000 | train_loss 3.4018 | lr 1.31e-04 | 23206s elapsed
+24051.0s 894 step 35850/61000 | train_loss 3.3591 | lr 1.31e-04 | 23237s elapsed
+24082.3s 895 step 35900/61000 | train_loss 3.2825 | lr 1.31e-04 | 23269s elapsed
+24113.5s 896 step 35950/61000 | train_loss 3.2241 | lr 1.30e-04 | 23300s elapsed
+24144.8s 897 step 36000/61000 | train_loss 3.2201 | lr 1.30e-04 | 23331s elapsed
+24155.6s 898 step 36000 | val_loss 3.2852 | val_ppl 26.71
+24156.1s 899 checkpoint saved at step 36000
+24187.4s 900 step 36050/61000 | train_loss 3.4749 | lr 1.30e-04 | 23374s elapsed
+24218.7s 901 step 36100/61000 | train_loss 3.3882 | lr 1.29e-04 | 23405s elapsed
+24249.9s 902 step 36150/61000 | train_loss 3.3764 | lr 1.29e-04 | 23436s elapsed
+24281.1s 903 step 36200/61000 | train_loss 3.2905 | lr 1.29e-04 | 23467s elapsed
+24312.4s 904 step 36250/61000 | train_loss 3.3670 | lr 1.28e-04 | 23499s elapsed
+24343.7s 905 step 36300/61000 | train_loss 3.3259 | lr 1.28e-04 | 23530s elapsed
+24375.0s 906 step 36350/61000 | train_loss 3.2568 | lr 1.28e-04 | 23561s elapsed
+24406.2s 907 step 36400/61000 | train_loss 3.2881 | lr 1.27e-04 | 23593s elapsed
+24437.4s 908 step 36450/61000 | train_loss 3.4880 | lr 1.27e-04 | 23624s elapsed
+24468.6s 909 step 36500/61000 | train_loss 3.3015 | lr 1.27e-04 | 23655s elapsed
+24479.3s 910 step 36500 | val_loss 3.2589 | val_ppl 26.02
+24480.4s 911 checkpoint saved at step 36500
+24511.6s 912 step 36550/61000 | train_loss 3.3170 | lr 1.26e-04 | 23698s elapsed
+24542.7s 913 step 36600/61000 | train_loss 3.3564 | lr 1.26e-04 | 23729s elapsed
+24573.9s 914 step 36650/61000 | train_loss 3.3092 | lr 1.26e-04 | 23760s elapsed
+24605.0s 915 step 36700/61000 | train_loss 3.2652 | lr 1.25e-04 | 23791s elapsed
+24636.2s 916 step 36750/61000 | train_loss 3.4226 | lr 1.25e-04 | 23823s elapsed
+24667.4s 917 step 36800/61000 | train_loss 3.4154 | lr 1.25e-04 | 23854s elapsed
+24698.6s 918 step 36850/61000 | train_loss 3.3815 | lr 1.24e-04 | 23885s elapsed
+24729.8s 919 step 36900/61000 | train_loss 3.3320 | lr 1.24e-04 | 23916s elapsed
+24761.0s 920 step 36950/61000 | train_loss 3.4427 | lr 1.24e-04 | 23947s elapsed
+24792.2s 921 step 37000/61000 | train_loss 3.2950 | lr 1.23e-04 | 23979s elapsed
+24802.9s 922 step 37000 | val_loss 3.2666 | val_ppl 26.22
+24803.6s 923 checkpoint saved at step 37000
+24834.8s 924 step 37050/61000 | train_loss 3.3705 | lr 1.23e-04 | 24021s elapsed
+24865.9s 925 step 37100/61000 | train_loss 3.3989 | lr 1.23e-04 | 24052s elapsed
+24897.1s 926 step 37150/61000 | train_loss 3.2184 | lr 1.22e-04 | 24083s elapsed
+24928.4s 927 step 37200/61000 | train_loss 3.4346 | lr 1.22e-04 | 24115s elapsed
+24959.6s 928 step 37250/61000 | train_loss 3.2849 | lr 1.22e-04 | 24146s elapsed
+24990.7s 929 step 37300/61000 | train_loss 3.3050 | lr 1.21e-04 | 24177s elapsed
+25022.0s 930 step 37350/61000 | train_loss 3.4635 | lr 1.21e-04 | 24208s elapsed
+25053.2s 931 step 37400/61000 | train_loss 3.3939 | lr 1.21e-04 | 24240s elapsed
+25084.3s 932 step 37450/61000 | train_loss 3.5573 | lr 1.20e-04 | 24271s elapsed
+25115.6s 933 step 37500/61000 | train_loss 3.3387 | lr 1.20e-04 | 24302s elapsed
+25126.3s 934 step 37500 | val_loss 3.2515 | val_ppl 25.83
+25127.4s 935 checkpoint saved at step 37500
+25158.6s 936 step 37550/61000 | train_loss 3.3016 | lr 1.20e-04 | 24345s elapsed
+25189.8s 937 step 37600/61000 | train_loss 3.3037 | lr 1.19e-04 | 24376s elapsed
+25221.0s 938 step 37650/61000 | train_loss 3.3481 | lr 1.19e-04 | 24407s elapsed
+25252.2s 939 step 37700/61000 | train_loss 3.2017 | lr 1.19e-04 | 24439s elapsed
+25283.4s 940 step 37750/61000 | train_loss 3.3567 | lr 1.18e-04 | 24470s elapsed
+25314.6s 941 step 37800/61000 | train_loss 3.4081 | lr 1.18e-04 | 24501s elapsed
+25345.8s 942 step 37850/61000 | train_loss 3.3173 | lr 1.18e-04 | 24532s elapsed
+25377.0s 943 step 37900/61000 | train_loss 3.3921 | lr 1.17e-04 | 24563s elapsed
+25408.2s 944 step 37950/61000 | train_loss 3.3919 | lr 1.17e-04 | 24595s elapsed
+25439.5s 945 step 38000/61000 | train_loss 3.3435 | lr 1.17e-04 | 24626s elapsed
+25450.2s 946 step 38000 | val_loss 3.2319 | val_ppl 25.33
+25451.4s 947 checkpoint saved at step 38000
+25482.5s 948 step 38050/61000 | train_loss 3.2794 | lr 1.16e-04 | 24669s elapsed
+25513.7s 949 step 38100/61000 | train_loss 3.3891 | lr 1.16e-04 | 24700s elapsed
+25544.9s 950 step 38150/61000 | train_loss 3.4710 | lr 1.16e-04 | 24731s elapsed
+25576.1s 951 step 38200/61000 | train_loss 3.3543 | lr 1.15e-04 | 24762s elapsed
+25607.3s 952 step 38250/61000 | train_loss 3.3268 | lr 1.15e-04 | 24794s elapsed
+25638.5s 953 step 38300/61000 | train_loss 3.2347 | lr 1.15e-04 | 24825s elapsed
+25669.7s 954 step 38350/61000 | train_loss 3.2247 | lr 1.14e-04 | 24856s elapsed
+25701.0s 955 step 38400/61000 | train_loss 3.3358 | lr 1.14e-04 | 24887s elapsed
+25732.3s 956 step 38450/61000 | train_loss 3.2737 | lr 1.14e-04 | 24919s elapsed
+25763.5s 957 step 38500/61000 | train_loss 3.1837 | lr 1.13e-04 | 24950s elapsed
+25774.2s 958 step 38500 | val_loss 3.2436 | val_ppl 25.62
+25774.7s 959 checkpoint saved at step 38500
+25805.9s 960 step 38550/61000 | train_loss 3.4161 | lr 1.13e-04 | 24992s elapsed
+25837.1s 961 step 38600/61000 | train_loss 3.2849 | lr 1.13e-04 | 25023s elapsed
+25868.3s 962 step 38650/61000 | train_loss 3.3471 | lr 1.12e-04 | 25055s elapsed
+25899.5s 963 step 38700/61000 | train_loss 3.3858 | lr 1.12e-04 | 25086s elapsed
+25930.7s 964 step 38750/61000 | train_loss 3.5733 | lr 1.12e-04 | 25117s elapsed
+25961.9s 965 step 38800/61000 | train_loss 3.1677 | lr 1.11e-04 | 25148s elapsed
+25993.1s 966 step 38850/61000 | train_loss 3.3539 | lr 1.11e-04 | 25179s elapsed
+26024.3s 967 step 38900/61000 | train_loss 3.4695 | lr 1.11e-04 | 25211s elapsed
+26055.6s 968 step 38950/61000 | train_loss 3.4788 | lr 1.10e-04 | 25242s elapsed
+26086.8s 969 step 39000/61000 | train_loss 3.3514 | lr 1.10e-04 | 25273s elapsed
+26097.5s 970 step 39000 | val_loss 3.2343 | val_ppl 25.39
+26098.1s 971 checkpoint saved at step 39000
+26129.3s 972 step 39050/61000 | train_loss 3.3363 | lr 1.10e-04 | 25316s elapsed
+26160.4s 973 step 39100/61000 | train_loss 3.3285 | lr 1.09e-04 | 25347s elapsed
+26191.6s 974 step 39150/61000 | train_loss 3.2550 | lr 1.09e-04 | 25378s elapsed
+26222.8s 975 step 39200/61000 | train_loss 3.2018 | lr 1.09e-04 | 25409s elapsed
+26254.0s 976 step 39250/61000 | train_loss 3.3818 | lr 1.08e-04 | 25440s elapsed
+26285.2s 977 step 39300/61000 | train_loss 3.4407 | lr 1.08e-04 | 25472s elapsed
+26316.4s 978 step 39350/61000 | train_loss 3.3073 | lr 1.08e-04 | 25503s elapsed
+26347.6s 979 step 39400/61000 | train_loss 3.2872 | lr 1.08e-04 | 25534s elapsed
+26378.8s 980 step 39450/61000 | train_loss 3.4811 | lr 1.07e-04 | 25565s elapsed
+26410.0s 981 step 39500/61000 | train_loss 3.3990 | lr 1.07e-04 | 25596s elapsed
+26420.6s 982 step 39500 | val_loss 3.2500 | val_ppl 25.79
+26421.2s 983 checkpoint saved at step 39500
+26452.4s 984 step 39550/61000 | train_loss 3.3459 | lr 1.07e-04 | 25639s elapsed
+26483.5s 985 step 39600/61000 | train_loss 3.2709 | lr 1.06e-04 | 25670s elapsed
+26514.7s 986 step 39650/61000 | train_loss 3.2203 | lr 1.06e-04 | 25701s elapsed
+26545.9s 987 step 39700/61000 | train_loss 3.1760 | lr 1.06e-04 | 25732s elapsed
+26577.0s 988 step 39750/61000 | train_loss 3.4443 | lr 1.05e-04 | 25763s elapsed
+26608.2s 989 step 39800/61000 | train_loss 3.3232 | lr 1.05e-04 | 25795s elapsed
+26639.4s 990 step 39850/61000 | train_loss 3.3187 | lr 1.05e-04 | 25826s elapsed
+26670.5s 991 step 39900/61000 | train_loss 3.2766 | lr 1.04e-04 | 25857s elapsed
+26701.7s 992 step 39950/61000 | train_loss 3.3687 | lr 1.04e-04 | 25888s elapsed
+26732.9s 993 step 40000/61000 | train_loss 3.4048 | lr 1.04e-04 | 25919s elapsed
+26743.6s 994 step 40000 | val_loss 3.2584 | val_ppl 26.01
+26744.2s 995 checkpoint saved at step 40000
+26775.3s 996 step 40050/61000 | train_loss 3.3784 | lr 1.03e-04 | 25962s elapsed
+26806.5s 997 step 40100/61000 | train_loss 3.2765 | lr 1.03e-04 | 25993s elapsed
+26837.6s 998 step 40150/61000 | train_loss 3.2218 | lr 1.03e-04 | 26024s elapsed
+26868.8s 999 step 40200/61000 | train_loss 3.1799 | lr 1.02e-04 | 26055s elapsed
+26900.0s 1000 step 40250/61000 | train_loss 3.3607 | lr 1.02e-04 | 26086s elapsed
+26931.3s 1001 step 40300/61000 | train_loss 3.3635 | lr 1.02e-04 | 26118s elapsed
+26962.5s 1002 step 40350/61000 | train_loss 3.3039 | lr 1.02e-04 | 26149s elapsed
+26993.8s 1003 step 40400/61000 | train_loss 3.3127 | lr 1.01e-04 | 26180s elapsed
+27025.1s 1004 step 40450/61000 | train_loss 3.3404 | lr 1.01e-04 | 26211s elapsed
+27056.4s 1005 step 40500/61000 | train_loss 3.2535 | lr 1.01e-04 | 26243s elapsed
+27067.1s 1006 step 40500 | val_loss 3.2500 | val_ppl 25.79
+27067.7s 1007 checkpoint saved at step 40500
+27099.0s 1008 step 40550/61000 | train_loss 3.2855 | lr 1.00e-04 | 26285s elapsed
+27130.3s 1009 step 40600/61000 | train_loss 3.3272 | lr 1.00e-04 | 26317s elapsed
+27161.6s 1010 step 40650/61000 | train_loss 3.3128 | lr 9.97e-05 | 26348s elapsed
+27192.8s 1011 step 40700/61000 | train_loss 3.2741 | lr 9.93e-05 | 26379s elapsed
+27224.1s 1012 step 40750/61000 | train_loss 3.2947 | lr 9.90e-05 | 26410s elapsed
+27255.4s 1013 step 40800/61000 | train_loss 3.4065 | lr 9.87e-05 | 26442s elapsed
+27286.7s 1014 step 40850/61000 | train_loss 3.2571 | lr 9.84e-05 | 26473s elapsed
+27318.0s 1015 step 40900/61000 | train_loss 3.3516 | lr 9.81e-05 | 26504s elapsed
+27349.3s 1016 step 40950/61000 | train_loss 3.2844 | lr 9.78e-05 | 26536s elapsed
+27380.6s 1017 step 41000/61000 | train_loss 3.2905 | lr 9.75e-05 | 26567s elapsed
+27391.3s 1018 step 41000 | val_loss 3.2295 | val_ppl 25.27
+27392.5s 1019 checkpoint saved at step 41000
+27423.7s 1020 step 41050/61000 | train_loss 3.2564 | lr 9.72e-05 | 26610s elapsed
+27455.0s 1021 step 41100/61000 | train_loss 3.4668 | lr 9.69e-05 | 26641s elapsed
+27486.2s 1022 step 41150/61000 | train_loss 3.2490 | lr 9.66e-05 | 26673s elapsed
+27517.5s 1023 step 41200/61000 | train_loss 3.2961 | lr 9.63e-05 | 26704s elapsed
+27548.8s 1024 step 41250/61000 | train_loss 3.4334 | lr 9.60e-05 | 26735s elapsed
+27580.1s 1025 step 41300/61000 | train_loss 3.2437 | lr 9.57e-05 | 26766s elapsed
+27611.4s 1026 step 41350/61000 | train_loss 3.1555 | lr 9.54e-05 | 26798s elapsed
+27642.6s 1027 step 41400/61000 | train_loss 3.2232 | lr 9.51e-05 | 26829s elapsed
+27673.9s 1028 step 41450/61000 | train_loss 3.2619 | lr 9.48e-05 | 26860s elapsed
+27705.2s 1029 step 41500/61000 | train_loss 3.3842 | lr 9.45e-05 | 26892s elapsed
+27715.9s 1030 step 41500 | val_loss 3.2189 | val_ppl 25.00
+27717.0s 1031 checkpoint saved at step 41500
+27748.2s 1032 step 41550/61000 | train_loss 3.4560 | lr 9.42e-05 | 26935s elapsed
+27779.5s 1033 step 41600/61000 | train_loss 3.3202 | lr 9.39e-05 | 26966s elapsed
+27810.7s 1034 step 41650/61000 | train_loss 3.2158 | lr 9.36e-05 | 26997s elapsed
+27842.0s 1035 step 41700/61000 | train_loss 3.2693 | lr 9.33e-05 | 27028s elapsed
+27873.3s 1036 step 41750/61000 | train_loss 3.3508 | lr 9.30e-05 | 27060s elapsed
+27904.6s 1037 step 41800/61000 | train_loss 3.1676 | lr 9.27e-05 | 27091s elapsed
+27935.9s 1038 step 41850/61000 | train_loss 3.2838 | lr 9.24e-05 | 27122s elapsed
+27967.2s 1039 step 41900/61000 | train_loss 3.2605 | lr 9.21e-05 | 27154s elapsed
+27998.5s 1040 step 41950/61000 | train_loss 3.2973 | lr 9.18e-05 | 27185s elapsed
+28029.8s 1041 step 42000/61000 | train_loss 3.4201 | lr 9.15e-05 | 27216s elapsed
+28040.5s 1042 step 42000 | val_loss 3.2104 | val_ppl 24.79
+28041.7s 1043 checkpoint saved at step 42000
+28072.9s 1044 step 42050/61000 | train_loss 3.3016 | lr 9.12e-05 | 27259s elapsed
+28104.2s 1045 step 42100/61000 | train_loss 3.2058 | lr 9.09e-05 | 27291s elapsed
+28135.4s 1046 step 42150/61000 | train_loss 3.0837 | lr 9.06e-05 | 27322s elapsed
+28166.7s 1047 step 42200/61000 | train_loss 3.1499 | lr 9.03e-05 | 27353s elapsed
+28197.9s 1048 step 42250/61000 | train_loss 3.4790 | lr 9.00e-05 | 27384s elapsed
+28229.2s 1049 step 42300/61000 | train_loss 3.4441 | lr 8.97e-05 | 27416s elapsed
+28260.5s 1050 step 42350/61000 | train_loss 3.4267 | lr 8.94e-05 | 27447s elapsed
+28291.7s 1051 step 42400/61000 | train_loss 3.2522 | lr 8.91e-05 | 27478s elapsed
+28323.0s 1052 step 42450/61000 | train_loss 3.2228 | lr 8.88e-05 | 27509s elapsed
+28354.3s 1053 step 42500/61000 | train_loss 3.2478 | lr 8.85e-05 | 27541s elapsed
+28365.0s 1054 step 42500 | val_loss 3.2199 | val_ppl 25.03
+28365.6s 1055 checkpoint saved at step 42500
+28396.9s 1056 step 42550/61000 | train_loss 3.1840 | lr 8.82e-05 | 27583s elapsed
+28428.1s 1057 step 42600/61000 | train_loss 3.2577 | lr 8.80e-05 | 27614s elapsed
+28459.4s 1058 step 42650/61000 | train_loss 3.3075 | lr 8.77e-05 | 27646s elapsed
+28490.6s 1059 step 42700/61000 | train_loss 3.2110 | lr 8.74e-05 | 27677s elapsed
+28521.8s 1060 step 42750/61000 | train_loss 3.3707 | lr 8.71e-05 | 27708s elapsed
+28553.1s 1061 step 42800/61000 | train_loss 3.3883 | lr 8.68e-05 | 27739s elapsed
+28584.4s 1062 step 42850/61000 | train_loss 3.4024 | lr 8.65e-05 | 27771s elapsed
+28615.7s 1063 step 42900/61000 | train_loss 3.2106 | lr 8.62e-05 | 27802s elapsed
+28647.0s 1064 step 42950/61000 | train_loss 3.2944 | lr 8.59e-05 | 27833s elapsed
+28678.2s 1065 step 43000/61000 | train_loss 3.2661 | lr 8.56e-05 | 27865s elapsed
+28689.0s 1066 step 43000 | val_loss 3.2264 | val_ppl 25.19
+28689.6s 1067 checkpoint saved at step 43000
+28720.8s 1068 step 43050/61000 | train_loss 3.4086 | lr 8.54e-05 | 27907s elapsed
+28752.1s 1069 step 43100/61000 | train_loss 3.2755 | lr 8.51e-05 | 27938s elapsed
+28783.4s 1070 step 43150/61000 | train_loss 3.2171 | lr 8.48e-05 | 27970s elapsed
+28814.7s 1071 step 43200/61000 | train_loss 3.2005 | lr 8.45e-05 | 28001s elapsed
+28846.0s 1072 step 43250/61000 | train_loss 3.3556 | lr 8.42e-05 | 28032s elapsed
+28877.2s 1073 step 43300/61000 | train_loss 3.1792 | lr 8.39e-05 | 28064s elapsed
+28908.5s 1074 step 43350/61000 | train_loss 3.2675 | lr 8.37e-05 | 28095s elapsed
+28939.9s 1075 step 43400/61000 | train_loss 3.1539 | lr 8.34e-05 | 28126s elapsed
+28971.1s 1076 step 43450/61000 | train_loss 3.3470 | lr 8.31e-05 | 28157s elapsed
+29002.4s 1077 step 43500/61000 | train_loss 3.2944 | lr 8.28e-05 | 28189s elapsed
+29013.2s 1078 step 43500 | val_loss 3.2208 | val_ppl 25.05
+29013.7s 1079 checkpoint saved at step 43500
+29045.0s 1080 step 43550/61000 | train_loss 3.2916 | lr 8.25e-05 | 28231s elapsed
+29076.2s 1081 step 43600/61000 | train_loss 3.3609 | lr 8.23e-05 | 28263s elapsed
+29107.5s 1082 step 43650/61000 | train_loss 3.4293 | lr 8.20e-05 | 28294s elapsed
+29138.7s 1083 step 43700/61000 | train_loss 3.3639 | lr 8.17e-05 | 28325s elapsed
+29170.0s 1084 step 43750/61000 | train_loss 3.2809 | lr 8.14e-05 | 28356s elapsed
+29201.3s 1085 step 43800/61000 | train_loss 3.2135 | lr 8.11e-05 | 28388s elapsed
+29232.6s 1086 step 43850/61000 | train_loss 3.3514 | lr 8.09e-05 | 28419s elapsed
+29263.9s 1087 step 43900/61000 | train_loss 3.2608 | lr 8.06e-05 | 28450s elapsed
+29295.2s 1088 step 43950/61000 | train_loss 3.2208 | lr 8.03e-05 | 28482s elapsed
+29326.6s 1089 step 44000/61000 | train_loss 3.4740 | lr 8.00e-05 | 28513s elapsed
+29337.3s 1090 step 44000 | val_loss 3.2157 | val_ppl 24.92
+29337.9s 1091 checkpoint saved at step 44000
+29369.2s 1092 step 44050/61000 | train_loss 3.4479 | lr 7.98e-05 | 28556s elapsed
+29400.5s 1093 step 44100/61000 | train_loss 3.2435 | lr 7.95e-05 | 28587s elapsed
+29431.8s 1094 step 44150/61000 | train_loss 3.2815 | lr 7.92e-05 | 28618s elapsed
+29463.1s 1095 step 44200/61000 | train_loss 3.2939 | lr 7.89e-05 | 28649s elapsed
+29494.4s 1096 step 44250/61000 | train_loss 3.3442 | lr 7.87e-05 | 28681s elapsed
+29525.7s 1097 step 44300/61000 | train_loss 3.3133 | lr 7.84e-05 | 28712s elapsed
+29557.0s 1098 step 44350/61000 | train_loss 3.1647 | lr 7.81e-05 | 28743s elapsed
+29588.3s 1099 step 44400/61000 | train_loss 3.1132 | lr 7.79e-05 | 28775s elapsed
+29619.6s 1100 step 44450/61000 | train_loss 3.4141 | lr 7.76e-05 | 28806s elapsed
+29650.9s 1101 step 44500/61000 | train_loss 3.3994 | lr 7.73e-05 | 28837s elapsed
+29661.7s 1102 step 44500 | val_loss 3.2186 | val_ppl 24.99
+29662.2s 1103 checkpoint saved at step 44500
+29693.5s 1104 step 44550/61000 | train_loss 3.2792 | lr 7.71e-05 | 28880s elapsed
+29724.8s 1105 step 44600/61000 | train_loss 3.2033 | lr 7.68e-05 | 28911s elapsed
+29756.1s 1106 step 44650/61000 | train_loss 3.3322 | lr 7.65e-05 | 28942s elapsed
+29787.4s 1107 step 44700/61000 | train_loss 3.3124 | lr 7.63e-05 | 28974s elapsed
+29818.7s 1108 step 44750/61000 | train_loss 3.2758 | lr 7.60e-05 | 29005s elapsed
+29850.0s 1109 step 44800/61000 | train_loss 3.3071 | lr 7.57e-05 | 29036s elapsed
+29881.3s 1110 step 44850/61000 | train_loss 3.4867 | lr 7.55e-05 | 29068s elapsed
+29912.6s 1111 step 44900/61000 | train_loss 3.3241 | lr 7.52e-05 | 29099s elapsed
+29943.9s 1112 step 44950/61000 | train_loss 3.3340 | lr 7.49e-05 | 29130s elapsed
+29975.2s 1113 step 45000/61000 | train_loss 3.2976 | lr 7.47e-05 | 29162s elapsed
+29985.9s 1114 step 45000 | val_loss 3.2178 | val_ppl 24.97
+29986.5s 1115 checkpoint saved at step 45000
+30017.7s 1116 step 45050/61000 | train_loss 3.3724 | lr 7.44e-05 | 29204s elapsed
+30049.1s 1117 step 45100/61000 | train_loss 3.3576 | lr 7.41e-05 | 29235s elapsed
+30080.5s 1118 step 45150/61000 | train_loss 3.3450 | lr 7.39e-05 | 29267s elapsed
+30112.0s 1119 step 45200/61000 | train_loss 3.2834 | lr 7.36e-05 | 29298s elapsed
+30143.5s 1120 step 45250/61000 | train_loss 3.3013 | lr 7.34e-05 | 29330s elapsed
+30174.9s 1121 step 45300/61000 | train_loss 3.3168 | lr 7.31e-05 | 29361s elapsed
+30206.3s 1122 step 45350/61000 | train_loss 3.3020 | lr 7.28e-05 | 29393s elapsed
+30237.7s 1123 step 45400/61000 | train_loss 3.2801 | lr 7.26e-05 | 29424s elapsed
+30269.0s 1124 step 45450/61000 | train_loss 3.2118 | lr 7.23e-05 | 29455s elapsed
+30300.3s 1125 step 45500/61000 | train_loss 3.2269 | lr 7.21e-05 | 29487s elapsed
+30311.1s 1126 step 45500 | val_loss 3.2082 | val_ppl 24.74
+30312.4s 1127 checkpoint saved at step 45500
+30343.6s 1128 step 45550/61000 | train_loss 3.2870 | lr 7.18e-05 | 29530s elapsed
+30374.8s 1129 step 45600/61000 | train_loss 3.2834 | lr 7.16e-05 | 29561s elapsed
+30406.1s 1130 step 45650/61000 | train_loss 3.2259 | lr 7.13e-05 | 29592s elapsed
+30437.4s 1131 step 45700/61000 | train_loss 3.2534 | lr 7.11e-05 | 29624s elapsed
+30468.7s 1132 step 45750/61000 | train_loss 3.3113 | lr 7.08e-05 | 29655s elapsed
+30499.9s 1133 step 45800/61000 | train_loss 3.2185 | lr 7.05e-05 | 29686s elapsed
+30531.3s 1134 step 45850/61000 | train_loss 3.4064 | lr 7.03e-05 | 29718s elapsed
+30562.5s 1135 step 45900/61000 | train_loss 3.2480 | lr 7.00e-05 | 29749s elapsed
+30593.9s 1136 step 45950/61000 | train_loss 3.3354 | lr 6.98e-05 | 29780s elapsed
+30625.4s 1137 step 46000/61000 | train_loss 3.3504 | lr 6.95e-05 | 29812s elapsed
+30636.2s 1138 step 46000 | val_loss 3.1921 | val_ppl 24.34
+30637.3s 1139 checkpoint saved at step 46000
+30668.8s 1140 step 46050/61000 | train_loss 3.2946 | lr 6.93e-05 | 29855s elapsed
+30700.1s 1141 step 46100/61000 | train_loss 3.1993 | lr 6.90e-05 | 29886s elapsed
+30731.5s 1142 step 46150/61000 | train_loss 3.2886 | lr 6.88e-05 | 29918s elapsed
+30762.8s 1143 step 46200/61000 | train_loss 3.1131 | lr 6.85e-05 | 29949s elapsed
+30794.2s 1144 step 46250/61000 | train_loss 3.3986 | lr 6.83e-05 | 29981s elapsed
+30825.5s 1145 step 46300/61000 | train_loss 3.2749 | lr 6.81e-05 | 30012s elapsed
+30856.8s 1146 step 46350/61000 | train_loss 3.3623 | lr 6.78e-05 | 30043s elapsed
+30888.2s 1147 step 46400/61000 | train_loss 3.2338 | lr 6.76e-05 | 30075s elapsed
+30919.5s 1148 step 46450/61000 | train_loss 3.2981 | lr 6.73e-05 | 30106s elapsed
+30950.8s 1149 step 46500/61000 | train_loss 3.2417 | lr 6.71e-05 | 30137s elapsed
+30961.5s 1150 step 46500 | val_loss 3.1928 | val_ppl 24.36
+30962.2s 1151 checkpoint saved at step 46500
+30993.5s 1152 step 46550/61000 | train_loss 3.2427 | lr 6.68e-05 | 30180s elapsed
+31024.7s 1153 step 46600/61000 | train_loss 3.2220 | lr 6.66e-05 | 30211s elapsed
+31056.0s 1154 step 46650/61000 | train_loss 3.3801 | lr 6.63e-05 | 30242s elapsed
+31087.3s 1155 step 46700/61000 | train_loss 3.2292 | lr 6.61e-05 | 30274s elapsed
+31118.6s 1156 step 46750/61000 | train_loss 3.2980 | lr 6.59e-05 | 30305s elapsed
+31150.0s 1157 step 46800/61000 | train_loss 3.1826 | lr 6.56e-05 | 30336s elapsed
+31181.4s 1158 step 46850/61000 | train_loss 3.2397 | lr 6.54e-05 | 30368s elapsed
+31212.9s 1159 step 46900/61000 | train_loss 3.2781 | lr 6.51e-05 | 30399s elapsed
+31244.4s 1160 step 46950/61000 | train_loss 3.2294 | lr 6.49e-05 | 30431s elapsed
+31276.0s 1161 step 47000/61000 | train_loss 3.1142 | lr 6.47e-05 | 30462s elapsed
+31286.8s 1162 step 47000 | val_loss 3.1875 | val_ppl 24.23
+31288.1s 1163 checkpoint saved at step 47000
+31319.5s 1164 step 47050/61000 | train_loss 3.2626 | lr 6.44e-05 | 30506s elapsed
+31350.8s 1165 step 47100/61000 | train_loss 3.1721 | lr 6.42e-05 | 30537s elapsed
+31382.2s 1166 step 47150/61000 | train_loss 3.2699 | lr 6.40e-05 | 30569s elapsed
+31413.5s 1167 step 47200/61000 | train_loss 3.3923 | lr 6.37e-05 | 30600s elapsed
+31444.8s 1168 step 47250/61000 | train_loss 3.3104 | lr 6.35e-05 | 30631s elapsed
+31476.1s 1169 step 47300/61000 | train_loss 3.3459 | lr 6.33e-05 | 30662s elapsed
+31507.4s 1170 step 47350/61000 | train_loss 3.2835 | lr 6.30e-05 | 30694s elapsed
+31538.7s 1171 step 47400/61000 | train_loss 3.3346 | lr 6.28e-05 | 30725s elapsed
+31570.0s 1172 step 47450/61000 | train_loss 3.3650 | lr 6.26e-05 | 30756s elapsed
+31601.3s 1173 step 47500/61000 | train_loss 3.2393 | lr 6.23e-05 | 30788s elapsed
+31612.0s 1174 step 47500 | val_loss 3.1838 | val_ppl 24.14
+31613.1s 1175 checkpoint saved at step 47500
+31644.3s 1176 step 47550/61000 | train_loss 3.2337 | lr 6.21e-05 | 30831s elapsed
+31675.5s 1177 step 47600/61000 | train_loss 3.3205 | lr 6.19e-05 | 30862s elapsed
+31706.8s 1178 step 47650/61000 | train_loss 3.3025 | lr 6.17e-05 | 30893s elapsed
+31738.0s 1179 step 47700/61000 | train_loss 3.3455 | lr 6.14e-05 | 30924s elapsed
+31769.2s 1180 step 47750/61000 | train_loss 3.2751 | lr 6.12e-05 | 30956s elapsed
+31800.5s 1181 step 47800/61000 | train_loss 3.3668 | lr 6.10e-05 | 30987s elapsed
+31831.7s 1182 step 47850/61000 | train_loss 3.1696 | lr 6.08e-05 | 31018s elapsed
+31863.0s 1183 step 47900/61000 | train_loss 3.3301 | lr 6.05e-05 | 31049s elapsed
+31894.2s 1184 step 47950/61000 | train_loss 3.2785 | lr 6.03e-05 | 31081s elapsed
+31925.5s 1185 step 48000/61000 | train_loss 3.4443 | lr 6.01e-05 | 31112s elapsed
+31936.2s 1186 step 48000 | val_loss 3.2099 | val_ppl 24.78
+31936.9s 1187 checkpoint saved at step 48000
+31968.2s 1188 step 48050/61000 | train_loss 3.2181 | lr 5.99e-05 | 31155s elapsed
+31999.7s 1189 step 48100/61000 | train_loss 3.2751 | lr 5.96e-05 | 31186s elapsed
+32031.1s 1190 step 48150/61000 | train_loss 3.1898 | lr 5.94e-05 | 31217s elapsed
+32062.6s 1191 step 48200/61000 | train_loss 3.2511 | lr 5.92e-05 | 31249s elapsed
+32094.0s 1192 step 48250/61000 | train_loss 3.2721 | lr 5.90e-05 | 31280s elapsed
+32125.4s 1193 step 48300/61000 | train_loss 3.3421 | lr 5.88e-05 | 31312s elapsed
+32156.7s 1194 step 48350/61000 | train_loss 3.1637 | lr 5.85e-05 | 31343s elapsed
+32188.0s 1195 step 48400/61000 | train_loss 3.2143 | lr 5.83e-05 | 31374s elapsed
+32219.2s 1196 step 48450/61000 | train_loss 3.1906 | lr 5.81e-05 | 31406s elapsed
+32250.5s 1197 step 48500/61000 | train_loss 3.2451 | lr 5.79e-05 | 31437s elapsed
+32261.2s 1198 step 48500 | val_loss 3.1930 | val_ppl 24.36
+32261.8s 1199 checkpoint saved at step 48500
+32293.0s 1200 step 48550/61000 | train_loss 3.1996 | lr 5.77e-05 | 31479s elapsed
+32324.2s 1201 step 48600/61000 | train_loss 3.2469 | lr 5.75e-05 | 31511s elapsed
+32355.4s 1202 step 48650/61000 | train_loss 3.1835 | lr 5.73e-05 | 31542s elapsed
+32386.7s 1203 step 48700/61000 | train_loss 3.1636 | lr 5.70e-05 | 31573s elapsed
+32417.9s 1204 step 48750/61000 | train_loss 3.3520 | lr 5.68e-05 | 31604s elapsed
+32449.1s 1205 step 48800/61000 | train_loss 3.2925 | lr 5.66e-05 | 31635s elapsed
+32480.3s 1206 step 48850/61000 | train_loss 3.2017 | lr 5.64e-05 | 31667s elapsed
+32511.6s 1207 step 48900/61000 | train_loss 3.3085 | lr 5.62e-05 | 31698s elapsed
+32542.8s 1208 step 48950/61000 | train_loss 3.3417 | lr 5.60e-05 | 31729s elapsed
+32574.1s 1209 step 49000/61000 | train_loss 3.1807 | lr 5.58e-05 | 31760s elapsed
+32584.8s 1210 step 49000 | val_loss 3.1835 | val_ppl 24.13
+32585.9s 1211 checkpoint saved at step 49000
+32617.1s 1212 step 49050/61000 | train_loss 3.2864 | lr 5.56e-05 | 31803s elapsed
+32648.4s 1213 step 49100/61000 | train_loss 3.2740 | lr 5.54e-05 | 31835s elapsed
+32679.8s 1214 step 49150/61000 | train_loss 3.3243 | lr 5.52e-05 | 31866s elapsed
+32711.2s 1215 step 49200/61000 | train_loss 3.3117 | lr 5.50e-05 | 31898s elapsed
+32742.7s 1216 step 49250/61000 | train_loss 3.2554 | lr 5.48e-05 | 31929s elapsed
+32774.2s 1217 step 49300/61000 | train_loss 3.3587 | lr 5.45e-05 | 31960s elapsed
+32805.5s 1218 step 49350/61000 | train_loss 3.2910 | lr 5.43e-05 | 31992s elapsed
+32836.9s 1219 step 49400/61000 | train_loss 3.2292 | lr 5.41e-05 | 32023s elapsed
+32868.2s 1220 step 49450/61000 | train_loss 3.1412 | lr 5.39e-05 | 32055s elapsed
+32899.5s 1221 step 49500/61000 | train_loss 3.2992 | lr 5.37e-05 | 32086s elapsed
+32910.2s 1222 step 49500 | val_loss 3.1793 | val_ppl 24.03
+32911.4s 1223 checkpoint saved at step 49500
+32942.7s 1224 step 49550/61000 | train_loss 3.1708 | lr 5.35e-05 | 32129s elapsed
+32973.8s 1225 step 49600/61000 | train_loss 3.2594 | lr 5.33e-05 | 32160s elapsed
+33005.0s 1226 step 49650/61000 | train_loss 3.2031 | lr 5.31e-05 | 32191s elapsed
+33036.2s 1227 step 49700/61000 | train_loss 3.1517 | lr 5.29e-05 | 32223s elapsed
+33067.6s 1228 step 49750/61000 | train_loss 3.1652 | lr 5.28e-05 | 32254s elapsed
+33099.0s 1229 step 49800/61000 | train_loss 3.1434 | lr 5.26e-05 | 32285s elapsed
+33130.5s 1230 step 49850/61000 | train_loss 3.1793 | lr 5.24e-05 | 32317s elapsed
+33161.9s 1231 step 49900/61000 | train_loss 3.2142 | lr 5.22e-05 | 32348s elapsed
+33193.4s 1232 step 49950/61000 | train_loss 3.3647 | lr 5.20e-05 | 32380s elapsed
+33224.8s 1233 step 50000/61000 | train_loss 3.1485 | lr 5.18e-05 | 32411s elapsed
+33235.5s 1234 step 50000 | val_loss 3.1884 | val_ppl 24.25
+33236.2s 1235 checkpoint saved at step 50000
+33267.5s 1236 step 50050/61000 | train_loss 3.2427 | lr 5.16e-05 | 32454s elapsed
+33298.8s 1237 step 50100/61000 | train_loss 3.1986 | lr 5.14e-05 | 32485s elapsed
+33330.1s 1238 step 50150/61000 | train_loss 3.2425 | lr 5.12e-05 | 32516s elapsed
+33361.4s 1239 step 50200/61000 | train_loss 3.3397 | lr 5.10e-05 | 32548s elapsed
+33392.6s 1240 step 50250/61000 | train_loss 3.2131 | lr 5.08e-05 | 32579s elapsed
+33423.8s 1241 step 50300/61000 | train_loss 3.1955 | lr 5.06e-05 | 32610s elapsed
+33455.1s 1242 step 50350/61000 | train_loss 3.2344 | lr 5.05e-05 | 32641s elapsed
+33486.3s 1243 step 50400/61000 | train_loss 3.3078 | lr 5.03e-05 | 32673s elapsed
+33517.6s 1244 step 50450/61000 | train_loss 3.3551 | lr 5.01e-05 | 32704s elapsed
+33548.8s 1245 step 50500/61000 | train_loss 3.2642 | lr 4.99e-05 | 32735s elapsed
+33559.5s 1246 step 50500 | val_loss 3.1782 | val_ppl 24.00
+33560.8s 1247 checkpoint saved at step 50500
+33592.0s 1248 step 50550/61000 | train_loss 3.2539 | lr 4.97e-05 | 32778s elapsed
+33623.4s 1249 step 50600/61000 | train_loss 3.1768 | lr 4.95e-05 | 32810s elapsed
+33654.8s 1250 step 50650/61000 | train_loss 3.3550 | lr 4.93e-05 | 32841s elapsed
+33686.3s 1251 step 50700/61000 | train_loss 3.1754 | lr 4.92e-05 | 32873s elapsed
+33717.7s 1252 step 50750/61000 | train_loss 3.3024 | lr 4.90e-05 | 32904s elapsed
+33749.1s 1253 step 50800/61000 | train_loss 3.3054 | lr 4.88e-05 | 32935s elapsed
+33780.4s 1254 step 50850/61000 | train_loss 3.2919 | lr 4.86e-05 | 32967s elapsed
+33811.7s 1255 step 50900/61000 | train_loss 3.1656 | lr 4.84e-05 | 32998s elapsed
+33842.9s 1256 step 50950/61000 | train_loss 3.2768 | lr 4.83e-05 | 33029s elapsed
+33874.2s 1257 step 51000/61000 | train_loss 3.2367 | lr 4.81e-05 | 33061s elapsed
+33884.9s 1258 step 51000 | val_loss 3.1693 | val_ppl 23.79
+33886.0s 1259 checkpoint saved at step 51000
+33917.3s 1260 step 51050/61000 | train_loss 3.1815 | lr 4.79e-05 | 33104s elapsed
+33948.6s 1261 step 51100/61000 | train_loss 3.2511 | lr 4.77e-05 | 33135s elapsed
+33979.8s 1262 step 51150/61000 | train_loss 3.3227 | lr 4.76e-05 | 33166s elapsed
+34011.0s 1263 step 51200/61000 | train_loss 3.0752 | lr 4.74e-05 | 33197s elapsed
+34042.2s 1264 step 51250/61000 | train_loss 3.3233 | lr 4.72e-05 | 33229s elapsed
+34073.5s 1265 step 51300/61000 | train_loss 3.2709 | lr 4.70e-05 | 33260s elapsed
+34104.9s 1266 step 51350/61000 | train_loss 3.1275 | lr 4.69e-05 | 33291s elapsed
+34136.3s 1267 step 51400/61000 | train_loss 3.2992 | lr 4.67e-05 | 33323s elapsed
+34167.8s 1268 step 51450/61000 | train_loss 3.2223 | lr 4.65e-05 | 33354s elapsed
+34199.3s 1269 step 51500/61000 | train_loss 3.2434 | lr 4.64e-05 | 33386s elapsed
+34210.1s 1270 step 51500 | val_loss 3.1761 | val_ppl 23.95
+34210.6s 1271 checkpoint saved at step 51500
+34242.0s 1272 step 51550/61000 | train_loss 3.1582 | lr 4.62e-05 | 33428s elapsed
+34273.4s 1273 step 51600/61000 | train_loss 3.3005 | lr 4.60e-05 | 33460s elapsed
+34304.7s 1274 step 51650/61000 | train_loss 3.3070 | lr 4.59e-05 | 33491s elapsed
+34336.0s 1275 step 51700/61000 | train_loss 3.2341 | lr 4.57e-05 | 33522s elapsed
+34367.3s 1276 step 51750/61000 | train_loss 3.2511 | lr 4.55e-05 | 33554s elapsed
+34398.6s 1277 step 51800/61000 | train_loss 3.3546 | lr 4.54e-05 | 33585s elapsed
+34429.9s 1278 step 51850/61000 | train_loss 3.1327 | lr 4.52e-05 | 33616s elapsed
+34461.3s 1279 step 51900/61000 | train_loss 3.2783 | lr 4.50e-05 | 33648s elapsed
+34492.6s 1280 step 51950/61000 | train_loss 3.2684 | lr 4.49e-05 | 33679s elapsed
+34523.8s 1281 step 52000/61000 | train_loss 3.1952 | lr 4.47e-05 | 33710s elapsed
+34534.6s 1282 step 52000 | val_loss 3.1775 | val_ppl 23.99
+34535.1s 1283 checkpoint saved at step 52000
+34566.5s 1284 step 52050/61000 | train_loss 3.2450 | lr 4.46e-05 | 33753s elapsed
+34597.8s 1285 step 52100/61000 | train_loss 3.1764 | lr 4.44e-05 | 33784s elapsed
+34629.0s 1286 step 52150/61000 | train_loss 3.2892 | lr 4.42e-05 | 33815s elapsed
+34660.3s 1287 step 52200/61000 | train_loss 3.2429 | lr 4.41e-05 | 33847s elapsed
+34691.6s 1288 step 52250/61000 | train_loss 3.2424 | lr 4.39e-05 | 33878s elapsed
+34722.9s 1289 step 52300/61000 | train_loss 3.1377 | lr 4.38e-05 | 33909s elapsed
+34754.2s 1290 step 52350/61000 | train_loss 3.3073 | lr 4.36e-05 | 33940s elapsed
+34785.4s 1291 step 52400/61000 | train_loss 3.1520 | lr 4.35e-05 | 33972s elapsed
+34816.7s 1292 step 52450/61000 | train_loss 3.2763 | lr 4.33e-05 | 34003s elapsed
+34848.0s 1293 step 52500/61000 | train_loss 3.1827 | lr 4.32e-05 | 34034s elapsed
+34858.7s 1294 step 52500 | val_loss 3.1719 | val_ppl 23.85
+34859.3s 1295 checkpoint saved at step 52500
+34890.6s 1296 step 52550/61000 | train_loss 3.0862 | lr 4.30e-05 | 34077s elapsed
+34921.9s 1297 step 52600/61000 | train_loss 3.2494 | lr 4.28e-05 | 34108s elapsed
+34953.1s 1298 step 52650/61000 | train_loss 3.2843 | lr 4.27e-05 | 34139s elapsed
+34984.4s 1299 step 52700/61000 | train_loss 3.2481 | lr 4.25e-05 | 34171s elapsed
+35015.6s 1300 step 52750/61000 | train_loss 3.1811 | lr 4.24e-05 | 34202s elapsed
+35046.9s 1301 step 52800/61000 | train_loss 3.3556 | lr 4.23e-05 | 34233s elapsed
+35078.2s 1302 step 52850/61000 | train_loss 3.1506 | lr 4.21e-05 | 34265s elapsed
+35109.5s 1303 step 52900/61000 | train_loss 3.1711 | lr 4.20e-05 | 34296s elapsed
+35140.7s 1304 step 52950/61000 | train_loss 3.1342 | lr 4.18e-05 | 34327s elapsed
+35172.0s 1305 step 53000/61000 | train_loss 3.3658 | lr 4.17e-05 | 34358s elapsed
+35182.7s 1306 step 53000 | val_loss 3.1652 | val_ppl 23.69
+35183.8s 1307 checkpoint saved at step 53000
+35215.1s 1308 step 53050/61000 | train_loss 3.2764 | lr 4.15e-05 | 34401s elapsed
+35246.4s 1309 step 53100/61000 | train_loss 3.3079 | lr 4.14e-05 | 34433s elapsed
+35277.7s 1310 step 53150/61000 | train_loss 3.3011 | lr 4.12e-05 | 34464s elapsed
+35309.0s 1311 step 53200/61000 | train_loss 3.2323 | lr 4.11e-05 | 34495s elapsed
+35340.4s 1312 step 53250/61000 | train_loss 3.2646 | lr 4.10e-05 | 34527s elapsed
+35371.7s 1313 step 53300/61000 | train_loss 3.2480 | lr 4.08e-05 | 34558s elapsed
+35402.9s 1314 step 53350/61000 | train_loss 3.3294 | lr 4.07e-05 | 34589s elapsed
+35434.3s 1315 step 53400/61000 | train_loss 3.1033 | lr 4.05e-05 | 34621s elapsed
+35465.6s 1316 step 53450/61000 | train_loss 3.0784 | lr 4.04e-05 | 34652s elapsed
+35496.9s 1317 step 53500/61000 | train_loss 3.2930 | lr 4.03e-05 | 34683s elapsed
+35507.6s 1318 step 53500 | val_loss 3.1878 | val_ppl 24.23
+35508.3s 1319 checkpoint saved at step 53500
+35539.6s 1320 step 53550/61000 | train_loss 3.2176 | lr 4.01e-05 | 34726s elapsed
+35570.9s 1321 step 53600/61000 | train_loss 3.4000 | lr 4.00e-05 | 34757s elapsed
+35602.1s 1322 step 53650/61000 | train_loss 3.2478 | lr 3.99e-05 | 34788s elapsed
+35633.4s 1323 step 53700/61000 | train_loss 3.2348 | lr 3.97e-05 | 34820s elapsed
+35664.7s 1324 step 53750/61000 | train_loss 3.1546 | lr 3.96e-05 | 34851s elapsed
+35696.1s 1325 step 53800/61000 | train_loss 3.2542 | lr 3.95e-05 | 34882s elapsed
+35727.4s 1326 step 53850/61000 | train_loss 3.2362 | lr 3.94e-05 | 34914s elapsed
+35758.7s 1327 step 53900/61000 | train_loss 3.2244 | lr 3.92e-05 | 34945s elapsed
+35790.0s 1328 step 53950/61000 | train_loss 3.1294 | lr 3.91e-05 | 34976s elapsed
+35821.3s 1329 step 54000/61000 | train_loss 3.2024 | lr 3.90e-05 | 35008s elapsed
+35832.0s 1330 step 54000 | val_loss 3.1519 | val_ppl 23.38
+35833.1s 1331 checkpoint saved at step 54000
+35864.4s 1332 step 54050/61000 | train_loss 3.2059 | lr 3.88e-05 | 35051s elapsed
+35895.6s 1333 step 54100/61000 | train_loss 3.3052 | lr 3.87e-05 | 35082s elapsed
+35926.8s 1334 step 54150/61000 | train_loss 3.3213 | lr 3.86e-05 | 35113s elapsed
+35958.1s 1335 step 54200/61000 | train_loss 3.2810 | lr 3.85e-05 | 35144s elapsed
+35989.4s 1336 step 54250/61000 | train_loss 3.2063 | lr 3.83e-05 | 35176s elapsed
+36020.7s 1337 step 54300/61000 | train_loss 3.2420 | lr 3.82e-05 | 35207s elapsed
+36051.9s 1338 step 54350/61000 | train_loss 3.2387 | lr 3.81e-05 | 35238s elapsed
+36083.2s 1339 step 54400/61000 | train_loss 3.2585 | lr 3.80e-05 | 35270s elapsed
+36114.5s 1340 step 54450/61000 | train_loss 3.2767 | lr 3.79e-05 | 35301s elapsed
+36145.7s 1341 step 54500/61000 | train_loss 3.2024 | lr 3.77e-05 | 35332s elapsed
+36156.4s 1342 step 54500 | val_loss 3.1789 | val_ppl 24.02
+36157.1s 1343 checkpoint saved at step 54500
+36188.4s 1344 step 54550/61000 | train_loss 3.1514 | lr 3.76e-05 | 35375s elapsed
+36219.7s 1345 step 54600/61000 | train_loss 3.3212 | lr 3.75e-05 | 35406s elapsed
+36251.0s 1346 step 54650/61000 | train_loss 3.3249 | lr 3.74e-05 | 35437s elapsed
+36282.2s 1347 step 54700/61000 | train_loss 3.2183 | lr 3.73e-05 | 35469s elapsed
+36313.5s 1348 step 54750/61000 | train_loss 3.2009 | lr 3.72e-05 | 35500s elapsed
+36344.8s 1349 step 54800/61000 | train_loss 3.3686 | lr 3.71e-05 | 35531s elapsed
+36376.0s 1350 step 54850/61000 | train_loss 3.3165 | lr 3.69e-05 | 35562s elapsed
+36407.3s 1351 step 54900/61000 | train_loss 3.3012 | lr 3.68e-05 | 35594s elapsed
+36438.6s 1352 step 54950/61000 | train_loss 3.2249 | lr 3.67e-05 | 35625s elapsed
+36469.9s 1353 step 55000/61000 | train_loss 3.1748 | lr 3.66e-05 | 35656s elapsed
+36480.6s 1354 step 55000 | val_loss 3.1728 | val_ppl 23.88
+36481.2s 1355 checkpoint saved at step 55000
+36512.5s 1356 step 55050/61000 | train_loss 3.2176 | lr 3.65e-05 | 35699s elapsed
+36543.7s 1357 step 55100/61000 | train_loss 3.1894 | lr 3.64e-05 | 35730s elapsed
+36575.0s 1358 step 55150/61000 | train_loss 3.2204 | lr 3.63e-05 | 35761s elapsed
+36606.2s 1359 step 55200/61000 | train_loss 3.2812 | lr 3.62e-05 | 35793s elapsed
+36637.5s 1360 step 55250/61000 | train_loss 3.4177 | lr 3.61e-05 | 35824s elapsed
+36668.8s 1361 step 55300/61000 | train_loss 3.2776 | lr 3.60e-05 | 35855s elapsed
+36700.1s 1362 step 55350/61000 | train_loss 3.2106 | lr 3.59e-05 | 35886s elapsed
+36731.4s 1363 step 55400/61000 | train_loss 3.3119 | lr 3.58e-05 | 35918s elapsed
+36762.7s 1364 step 55450/61000 | train_loss 3.1927 | lr 3.57e-05 | 35949s elapsed
+36794.0s 1365 step 55500/61000 | train_loss 3.1310 | lr 3.56e-05 | 35980s elapsed
+36804.7s 1366 step 55500 | val_loss 3.1668 | val_ppl 23.73
+36805.3s 1367 checkpoint saved at step 55500
+36836.6s 1368 step 55550/61000 | train_loss 3.2946 | lr 3.55e-05 | 36023s elapsed
+36867.8s 1369 step 55600/61000 | train_loss 3.3400 | lr 3.54e-05 | 36054s elapsed
+36899.1s 1370 step 55650/61000 | train_loss 3.2403 | lr 3.53e-05 | 36085s elapsed
+36930.3s 1371 step 55700/61000 | train_loss 3.0245 | lr 3.52e-05 | 36117s elapsed
+36961.6s 1372 step 55750/61000 | train_loss 3.3916 | lr 3.51e-05 | 36148s elapsed
+36992.9s 1373 step 55800/61000 | train_loss 3.1936 | lr 3.50e-05 | 36179s elapsed
+37024.2s 1374 step 55850/61000 | train_loss 3.2955 | lr 3.49e-05 | 36211s elapsed
+37055.5s 1375 step 55900/61000 | train_loss 3.5358 | lr 3.48e-05 | 36242s elapsed
+37086.8s 1376 step 55950/61000 | train_loss 3.1851 | lr 3.47e-05 | 36273s elapsed
+37118.1s 1377 step 56000/61000 | train_loss 3.3402 | lr 3.46e-05 | 36304s elapsed
+37128.9s 1378 step 56000 | val_loss 3.1645 | val_ppl 23.68
+37129.4s 1379 checkpoint saved at step 56000
+37160.7s 1380 step 56050/61000 | train_loss 3.3285 | lr 3.45e-05 | 36347s elapsed
+37191.9s 1381 step 56100/61000 | train_loss 3.3542 | lr 3.44e-05 | 36378s elapsed
+37223.2s 1382 step 56150/61000 | train_loss 3.3184 | lr 3.43e-05 | 36409s elapsed
+37254.4s 1383 step 56200/61000 | train_loss 3.1063 | lr 3.42e-05 | 36441s elapsed
+37285.7s 1384 step 56250/61000 | train_loss 3.2471 | lr 3.42e-05 | 36472s elapsed
+37317.0s 1385 step 56300/61000 | train_loss 3.3180 | lr 3.41e-05 | 36503s elapsed
+37348.3s 1386 step 56350/61000 | train_loss 3.2516 | lr 3.40e-05 | 36535s elapsed
+37379.5s 1387 step 56400/61000 | train_loss 3.2074 | lr 3.39e-05 | 36566s elapsed
+37410.8s 1388 step 56450/61000 | train_loss 3.1429 | lr 3.38e-05 | 36597s elapsed
+37442.1s 1389 step 56500/61000 | train_loss 3.3726 | lr 3.37e-05 | 36628s elapsed
+37452.8s 1390 step 56500 | val_loss 3.1490 | val_ppl 23.31
+37453.9s 1391 checkpoint saved at step 56500
+37485.2s 1392 step 56550/61000 | train_loss 3.1039 | lr 3.36e-05 | 36671s elapsed
+37516.4s 1393 step 56600/61000 | train_loss 3.1906 | lr 3.36e-05 | 36703s elapsed
+37547.6s 1394 step 56650/61000 | train_loss 3.2870 | lr 3.35e-05 | 36734s elapsed
+37578.8s 1395 step 56700/61000 | train_loss 3.3473 | lr 3.34e-05 | 36765s elapsed
+37610.1s 1396 step 56750/61000 | train_loss 3.1557 | lr 3.33e-05 | 36796s elapsed
+37641.3s 1397 step 56800/61000 | train_loss 3.1686 | lr 3.33e-05 | 36828s elapsed
+37672.5s 1398 step 56850/61000 | train_loss 3.3320 | lr 3.32e-05 | 36859s elapsed
+37703.8s 1399 step 56900/61000 | train_loss 3.1411 | lr 3.31e-05 | 36890s elapsed
+37735.1s 1400 step 56950/61000 | train_loss 3.2725 | lr 3.30e-05 | 36921s elapsed
+37766.3s 1401 step 57000/61000 | train_loss 3.2379 | lr 3.30e-05 | 36953s elapsed
+37777.0s 1402 step 57000 | val_loss 3.1391 | val_ppl 23.08
+37778.2s 1403 checkpoint saved at step 57000
+37809.4s 1404 step 57050/61000 | train_loss 3.0934 | lr 3.29e-05 | 36996s elapsed
+37840.6s 1405 step 57100/61000 | train_loss 3.2229 | lr 3.28e-05 | 37027s elapsed
+37871.8s 1406 step 57150/61000 | train_loss 3.3337 | lr 3.27e-05 | 37058s elapsed
+37903.1s 1407 step 57200/61000 | train_loss 3.2132 | lr 3.27e-05 | 37089s elapsed
+37934.3s 1408 step 57250/61000 | train_loss 3.2212 | lr 3.26e-05 | 37121s elapsed
+37965.6s 1409 step 57300/61000 | train_loss 3.2382 | lr 3.25e-05 | 37152s elapsed
+37996.9s 1410 step 57350/61000 | train_loss 3.2767 | lr 3.25e-05 | 37183s elapsed
+38028.0s 1411 step 57400/61000 | train_loss 3.2374 | lr 3.24e-05 | 37214s elapsed
+38059.2s 1412 step 57450/61000 | train_loss 3.2163 | lr 3.23e-05 | 37246s elapsed
+38090.5s 1413 step 57500/61000 | train_loss 3.2496 | lr 3.23e-05 | 37277s elapsed
+38101.2s 1414 step 57500 | val_loss 3.1436 | val_ppl 23.19
+38101.8s 1415 checkpoint saved at step 57500
+38133.2s 1416 step 57550/61000 | train_loss 3.2547 | lr 3.22e-05 | 37319s elapsed
+38164.4s 1417 step 57600/61000 | train_loss 3.2463 | lr 3.21e-05 | 37351s elapsed
+38195.7s 1418 step 57650/61000 | train_loss 3.2588 | lr 3.21e-05 | 37382s elapsed
+38226.9s 1419 step 57700/61000 | train_loss 3.1899 | lr 3.20e-05 | 37413s elapsed
+38258.1s 1420 step 57750/61000 | train_loss 3.1883 | lr 3.19e-05 | 37444s elapsed
+38289.4s 1421 step 57800/61000 | train_loss 3.2858 | lr 3.19e-05 | 37476s elapsed
+38320.7s 1422 step 57850/61000 | train_loss 3.2283 | lr 3.18e-05 | 37507s elapsed
+38352.0s 1423 step 57900/61000 | train_loss 3.1919 | lr 3.18e-05 | 37538s elapsed
+38383.3s 1424 step 57950/61000 | train_loss 3.4171 | lr 3.17e-05 | 37570s elapsed
+38414.5s 1425 step 58000/61000 | train_loss 3.2741 | lr 3.17e-05 | 37601s elapsed
+38425.2s 1426 step 58000 | val_loss 3.1617 | val_ppl 23.61
+38425.8s 1427 checkpoint saved at step 58000
+38457.1s 1428 step 58050/61000 | train_loss 3.1799 | lr 3.16e-05 | 37643s elapsed
+38488.4s 1429 step 58100/61000 | train_loss 3.1355 | lr 3.16e-05 | 37675s elapsed
+38519.6s 1430 step 58150/61000 | train_loss 3.2201 | lr 3.15e-05 | 37706s elapsed
+38550.8s 1431 step 58200/61000 | train_loss 3.2593 | lr 3.14e-05 | 37737s elapsed
+38582.1s 1432 step 58250/61000 | train_loss 3.2700 | lr 3.14e-05 | 37768s elapsed
+38613.3s 1433 step 58300/61000 | train_loss 3.1820 | lr 3.13e-05 | 37800s elapsed
+38644.5s 1434 step 58350/61000 | train_loss 3.2851 | lr 3.13e-05 | 37831s elapsed
+38675.8s 1435 step 58400/61000 | train_loss 3.2332 | lr 3.12e-05 | 37862s elapsed
+38707.0s 1436 step 58450/61000 | train_loss 3.2876 | lr 3.12e-05 | 37893s elapsed
+38738.3s 1437 step 58500/61000 | train_loss 3.1887 | lr 3.12e-05 | 37925s elapsed
+38749.0s 1438 step 58500 | val_loss 3.1476 | val_ppl 23.28
+38749.5s 1439 checkpoint saved at step 58500
+38780.8s 1440 step 58550/61000 | train_loss 3.2586 | lr 3.11e-05 | 37967s elapsed
+38812.0s 1441 step 58600/61000 | train_loss 3.2296 | lr 3.11e-05 | 37998s elapsed
+38843.3s 1442 step 58650/61000 | train_loss 3.1025 | lr 3.10e-05 | 38030s elapsed
+38874.6s 1443 step 58700/61000 | train_loss 3.2998 | lr 3.10e-05 | 38061s elapsed
+38905.8s 1444 step 58750/61000 | train_loss 3.3223 | lr 3.09e-05 | 38092s elapsed
+38937.1s 1445 step 58800/61000 | train_loss 3.2149 | lr 3.09e-05 | 38123s elapsed
+38968.4s 1446 step 58850/61000 | train_loss 3.1633 | lr 3.09e-05 | 38155s elapsed
+38999.8s 1447 step 58900/61000 | train_loss 3.1662 | lr 3.08e-05 | 38186s elapsed
+39031.0s 1448 step 58950/61000 | train_loss 3.2318 | lr 3.08e-05 | 38217s elapsed
+39062.3s 1449 step 59000/61000 | train_loss 3.1480 | lr 3.07e-05 | 38249s elapsed
+39073.0s 1450 step 59000 | val_loss 3.1644 | val_ppl 23.67
+39073.5s 1451 checkpoint saved at step 59000
+39104.9s 1452 step 59050/61000 | train_loss 3.3832 | lr 3.07e-05 | 38291s elapsed
+39136.1s 1453 step 59100/61000 | train_loss 3.3022 | lr 3.07e-05 | 38322s elapsed
+39167.4s 1454 step 59150/61000 | train_loss 3.2468 | lr 3.06e-05 | 38354s elapsed
+39198.7s 1455 step 59200/61000 | train_loss 3.3587 | lr 3.06e-05 | 38385s elapsed
+39230.1s 1456 step 59250/61000 | train_loss 3.2070 | lr 3.06e-05 | 38416s elapsed
+39261.3s 1457 step 59300/61000 | train_loss 3.2042 | lr 3.05e-05 | 38448s elapsed
+39292.6s 1458 step 59350/61000 | train_loss 3.2400 | lr 3.05e-05 | 38479s elapsed
+39323.9s 1459 step 59400/61000 | train_loss 3.1954 | lr 3.05e-05 | 38510s elapsed
+39355.2s 1460 step 59450/61000 | train_loss 3.1282 | lr 3.04e-05 | 38541s elapsed
+39386.4s 1461 step 59500/61000 | train_loss 3.1769 | lr 3.04e-05 | 38573s elapsed
+39397.1s 1462 step 59500 | val_loss 3.1530 | val_ppl 23.41
+39397.7s 1463 checkpoint saved at step 59500
+39429.0s 1464 step 59550/61000 | train_loss 3.2663 | lr 3.04e-05 | 38615s elapsed
+39460.3s 1465 step 59600/61000 | train_loss 3.2094 | lr 3.04e-05 | 38647s elapsed
+39491.6s 1466 step 59650/61000 | train_loss 3.3115 | lr 3.03e-05 | 38678s elapsed
+39522.9s 1467 step 59700/61000 | train_loss 3.2355 | lr 3.03e-05 | 38709s elapsed
+39554.2s 1468 step 59750/61000 | train_loss 3.2973 | lr 3.03e-05 | 38740s elapsed
+39585.4s 1469 step 59800/61000 | train_loss 3.1322 | lr 3.03e-05 | 38772s elapsed
+39616.8s 1470 step 59850/61000 | train_loss 3.1929 | lr 3.02e-05 | 38803s elapsed
+39648.1s 1471 step 59900/61000 | train_loss 3.2599 | lr 3.02e-05 | 38834s elapsed
+39679.3s 1472 step 59950/61000 | train_loss 3.2115 | lr 3.02e-05 | 38866s elapsed
+39710.6s 1473 step 60000/61000 | train_loss 3.2251 | lr 3.02e-05 | 38897s elapsed
+39721.4s 1474 step 60000 | val_loss 3.1564 | val_ppl 23.49
+39721.9s 1475 checkpoint saved at step 60000
+39753.2s 1476 step 60050/61000 | train_loss 3.0738 | lr 3.02e-05 | 38940s elapsed
+39784.4s 1477 step 60100/61000 | train_loss 3.3121 | lr 3.01e-05 | 38971s elapsed
+39815.7s 1478 step 60150/61000 | train_loss 3.1876 | lr 3.01e-05 | 39002s elapsed
+39847.0s 1479 step 60200/61000 | train_loss 3.3164 | lr 3.01e-05 | 39033s elapsed
+39878.3s 1480 step 60250/61000 | train_loss 3.1518 | lr 3.01e-05 | 39065s elapsed
+39909.6s 1481 step 60300/61000 | train_loss 3.3122 | lr 3.01e-05 | 39096s elapsed
+39941.0s 1482 step 60350/61000 | train_loss 3.2056 | lr 3.01e-05 | 39127s elapsed
+39972.3s 1483 step 60400/61000 | train_loss 3.2029 | lr 3.01e-05 | 39159s elapsed
+40003.6s 1484 step 60450/61000 | train_loss 3.2269 | lr 3.01e-05 | 39190s elapsed
+40035.0s 1485 step 60500/61000 | train_loss 3.1330 | lr 3.00e-05 | 39221s elapsed
+40045.7s 1486 step 60500 | val_loss 3.1552 | val_ppl 23.46
+40046.2s 1487 checkpoint saved at step 60500
+40077.5s 1488 step 60550/61000 | train_loss 3.1851 | lr 3.00e-05 | 39264s elapsed
+40108.8s 1489 step 60600/61000 | train_loss 3.1948 | lr 3.00e-05 | 39295s elapsed
+40140.1s 1490 step 60650/61000 | train_loss 3.1968 | lr 3.00e-05 | 39326s elapsed
+40171.4s 1491 step 60700/61000 | train_loss 3.2894 | lr 3.00e-05 | 39358s elapsed
+40202.7s 1492 step 60750/61000 | train_loss 3.2996 | lr 3.00e-05 | 39389s elapsed
+40234.0s 1493 step 60800/61000 | train_loss 3.2774 | lr 3.00e-05 | 39420s elapsed
+40265.3s 1494 step 60850/61000 | train_loss 3.2814 | lr 3.00e-05 | 39452s elapsed
+40296.6s 1495 step 60900/61000 | train_loss 3.2340 | lr 3.00e-05 | 39483s elapsed
+40327.9s 1496 step 60950/61000 | train_loss 3.2897 | lr 3.00e-05 | 39514s elapsed
+40359.4s 1497 step 61000/61000 | train_loss 3.2855 | lr 3.00e-05 | 39546s elapsed
+40370.0s 1498 step 61000 | val_loss 3.1357 | val_ppl 23.01
+40371.1s 1499 checkpoint saved at step 61000
+40371.1s 1500 training complete
+40371.3s 1501 /kaggle/working/checkpoints/hindi/best.pt 318.488583 MB
+40371.3s 1502 /kaggle/working/checkpoints/hindi/latest.pt 318.490443 MB
+40378.3s 1503 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+40378.3s 1504 cells[i][c] = re.sub('\\\\\|', '|', cell)
+40378.5s 1505 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+40378.5s 1506 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+40379.1s 1507 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+40379.6s 1508 [NbConvertApp] Writing 118591 bytes to __notebook__.ipynb
+40382.1s 1509 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+40383.0s 1510 [NbConvertApp] Writing 381204 bytes to __results__.html

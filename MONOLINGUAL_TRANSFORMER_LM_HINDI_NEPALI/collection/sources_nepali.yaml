@@ -1,0 +1,65 @@
+# Nepali (Model L) manual-collection sources.
+#
+# Every domain below was probed by hand on 19 Aug 2026, same procedure as
+# sources_hindi.yaml: curl the sitemap/robots.txt, then a live trafilatura extraction
+# test on one real article URL pulled from that sitemap.
+#
+# Rejected candidates, and why:
+#   - onlinekhabar.com: /sitemap.xml redirects to /wp-sitemap.xml, which itself
+#     301-redirects back to the bare site root -- a redirect loop with no article
+#     sitemap ever served.
+#   - ekantipur.com: /sitemap.xml returns the site's HTML shell (a real page, not XML).
+#   - ratopati.com: /sitemap.xml redirects straight to the homepage.
+#   - setopati.com, baahrakhari.com: /sitemap.xml is real XML but lists only
+#     category.xml / pages.xml / authors.xml / tags.xml -- no post-level sitemap.
+#   - annapurnapost.com: consistently returns HTTP 403 on /sitemap.xml regardless of
+#     User-Agent, i.e. bot-blocked at the edge rather than genuinely absent.
+#   - nepalpress.com: removed 19 Aug 2026 after the live crawl reproducibly got 0
+#     URLs despite the sitemap itself being fine in isolation. Root cause traced to
+#     Cloudflare's edge: a session that fetches /robots.txt and then /wp-sitemap.xml
+#     gets a 403 on the second request specifically (verified: a fresh session going
+#     straight to the sitemap succeeds; the same session fetching robots.txt first
+#     does not, even with a delay between requests) -- a bot-detection heuristic on
+#     the robots-then-sitemap request pattern, not a UA or rate-limit issue (every
+#     other domain here does the same robots.txt-then-sitemap sequence without
+#     tripping it). Not worth building session-per-domain isolation or a Cloudflare
+#     challenge solver for one of five domains.
+target_tokens: 125_000_000     # manual-collection target for this language
+bytes_per_token: 13.5           # planning estimate: 4.5 chars/token (pre-tokenizer,
+                                 # Devanagari) * 3 bytes/char in UTF-8; replaced by a
+                                 # measured rate once the tokenizer exists
+
+domains:
+  # WordPress core sitemap (wp-sitemap.xml -> wp-sitemap-posts-post-N.xml), verified
+  # working with real article URLs, clean trafilatura extraction.
+  - name: khabarhub.com
+    base_url: https://khabarhub.com
+    sitemaps:
+      - https://khabarhub.com/wp-sitemap.xml
+    sitemap_must_match: "posts-post"
+    max_urls: 150000
+
+  - name: dcnepal.com
+    base_url: https://www.dcnepal.com
+    sitemaps:
+      - https://www.dcnepal.com/wp-sitemap.xml
+    sitemap_must_match: "posts-post"
+    max_urls: 150000
+
+  # Yoast-style numbered post sitemap index, business/finance outlet -- adds topical
+  # diversity beyond general news.
+  - name: karobardaily.com
+    base_url: https://www.karobardaily.com
+    sitemaps:
+      - https://www.karobardaily.com/sitemap_index.xml
+    max_urls: 150000
+
+  # Found independently of any reference material: /sitemap.xml redirects to a
+  # genuine WordPress core sitemap (wp-sitemap-posts-post-N.xml). Sample article
+  # verified: clean Devanagari body text despite a romanized URL slug.
+  - name: nepalnews.com
+    base_url: https://nepalnews.com
+    sitemaps:
+      - https://nepalnews.com/wp-sitemap.xml
+    sitemap_must_match: "posts-post"
+    max_urls: 150000

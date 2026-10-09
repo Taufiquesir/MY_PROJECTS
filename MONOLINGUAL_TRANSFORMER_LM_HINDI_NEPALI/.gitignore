@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Large corpus artifacts (assignment: do NOT commit large binary artifacts;
+# upload to Google Drive and link from README instead). Small JSON/YAML
+# manifests and stats are intentionally NOT ignored.
+data/
+logs/
+
+# Model checkpoints (weights+optimizer+scheduler state, ~300MB each) -- same
+# large-binary-artifact rule as data/ above, upload to Drive and link from README.
+*/train/checkpoints/
+*.pt
+
+# Tokenizer scratch (sample text files, sweep intermediates) -- final .model/.vocab
+# files under <lang>/tokenizer/ ARE committed and are not covered by this rule.
+*/tokenizer_sample.txt
+*/tokenizer_sweep/
+*/unk_probe/
+
+# Local agent/session context, not part of the graded deliverable
+CLAUDE.md
+
+# Misc
+*.tmp
+.env

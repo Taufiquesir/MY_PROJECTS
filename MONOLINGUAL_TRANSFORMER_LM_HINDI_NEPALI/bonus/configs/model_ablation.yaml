@@ -1,0 +1,12 @@
+# Model H (Hindi) architecture config for the bonus no-positional-embedding
+# ablation. Every field is identical to hindi/configs/model.yaml -- the ablation
+# is only supposed to test the effect of removing RoPE, so every other
+# architecture choice (width, depth, heads, dropout) is held fixed at the same
+# values as the standard model for a fair, apples-to-apples comparison.
+vocab_size: 9000
+d_model: 384
+n_layers: 13
+n_heads: 6
+d_ff: 1536
+max_seq_len: 256
+dropout: 0.1

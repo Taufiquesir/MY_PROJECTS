@@ -1,0 +1,28 @@
+{
+  "splits": {
+    "train": {
+      "n_examples": 6000,
+      "kind_counts": {
+        "ranking": 2115,
+        "transitive": 1241,
+        "pairwise": 2644
+      }
+    },
+    "val": {
+      "n_examples": 600,
+      "kind_counts": {
+        "ranking": 160,
+        "transitive": 243,
+        "pairwise": 197
+      }
+    },
+    "test": {
+      "n_examples": 800,
+      "kind_counts": {
+        "transitive": 314,
+        "ranking": 239,
+        "pairwise": 247
+      }
+    }
+  }
+}

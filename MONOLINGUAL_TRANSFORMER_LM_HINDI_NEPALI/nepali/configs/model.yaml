@@ -1,0 +1,29 @@
+# Model L (Nepali) architecture config.
+#
+# Why these exact numbers (~25M-parameter target, see model/config.py for field
+# docs and report/phase2/README.md section "Configuration and reporting" for the
+# full writeup): I picked width first -- n_heads=6 divides d_model=384 evenly
+# into d_head=64, a clean, standard per-head size that RoPE's 2D rotation pairs
+# need to be even. d_ff is the conventional 4x d_model expansion (1536). With
+# width fixed, the only free variable left to hit ~25M params was depth
+# (n_layers). 12 layers lands at 24,750,336 params -- under the 25M floor by
+# about 250,000, a real shortfall, not a rounding error. 13 layers lands at
+# 26,524,800 -- comfortably over the floor with a deliberate safety margin.
+#
+# I went deeper rather than wider once I had to pick a layer count, because more
+# stacked layers give the model more sequential steps to build on its own
+# representation before producing an answer -- more "thinking depth" -- which
+# matters more for the multi-hop comparative reasoning I planned to finetune on
+# in Phase 3 (e.g. chaining "A > B" and "B > C" into "A > C") than raw per-layer
+# width would. Model L keeps the exact same width/depth choice as Model H on
+# purpose, even though its own vocabulary happened to land at the same 9,000
+# size as Hindi's -- so any later difference between the two models' results
+# traces back to the data and language, not to one of them getting a bigger
+# architecture than the other.
+vocab_size: 9000
+d_model: 384
+n_layers: 13
+n_heads: 6
+d_ff: 1536
+max_seq_len: 256
+dropout: 0.1

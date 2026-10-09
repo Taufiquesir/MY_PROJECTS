@@ -1,0 +1,20 @@
+# Model H (Hindi) pretraining config for the bonus no-positional-embedding
+# ablation. Every field here is identical to hindi/configs/train.yaml -- same
+# optimizer/schedule hyperparameters (lr, weight_decay, betas, grad_clip,
+# warmup_steps, batch_size, eval/checkpoint cadence) AND the same max_steps
+# (61,000 steps = 61,000 * 32 * 256 ~= 500M tokens), so this is a genuine
+# like-for-like comparison against the standard model: same corpus, same
+# training budget, same everything except the model architecture. The only
+# variable being tested is whether removing RoPE changes the outcome.
+lr: 0.0003
+weight_decay: 0.1
+beta1: 0.9
+beta2: 0.95
+grad_clip: 1.0
+warmup_steps: 1000
+max_steps: 61000       # 500M tokens / (batch_size 32 * seq_len 256) = 61,035 steps
+batch_size: 32
+eval_every: 500
+eval_batches: 50
+checkpoint_every: 500
+log_every: 50
