@@ -22,3 +22,11 @@ POSIX_SHELL_IMPLEMENTATION/myshell
 *.log
 *.out
 *.toc
+
+# Node (presentation build)
+node_modules/
+
+# Datasets and run logs for the haze-removal project
+DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR/data/
+DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR/results/*.log
+.pytest_cache/

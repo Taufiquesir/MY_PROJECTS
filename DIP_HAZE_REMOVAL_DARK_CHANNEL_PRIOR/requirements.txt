@@ -1,0 +1,12 @@
+# Versions used for all reported results (Python 3.12.3).
+# OpenCV: tested with the system build 4.13.0-dev (cv2 from /usr/local/lib/python3.12/dist-packages).
+# Any recent opencv-python(-headless) 4.x with DISOpticalFlow should work, but only 4.13.0-dev was tested.
+opencv-python-headless>=4.5
+numpy==1.26.4
+scipy==1.11.4
+scikit-image==0.26.0
+PyYAML==6.0.1
+matplotlib==3.6.3
+pytest==9.1.1
+python-pptx==1.0.2
+gdown==6.4.2

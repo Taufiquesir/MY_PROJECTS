@@ -1,0 +1,12 @@
+{
+  "name": "dip-project-deck",
+  "private": true,
+  "description": "Builds DIP_Project_Presentation.pptx: npm install && node make_deck.js",
+  "dependencies": {
+    "pptxgenjs": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-icons": "*",
+    "sharp": "*"
+  }
+}

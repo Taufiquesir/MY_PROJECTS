@@ -1,0 +1,2 @@
+sots_root: data/reside/sots/SOTS      # RESIDE SOTS (indoor/outdoor, each with hazy/ and gt/)
+revide_root: data/revide/indoor        # REVIDE indoor: Train|Test / hazy|gt / <clip> / frames

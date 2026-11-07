@@ -1,0 +1,15 @@
+# Default single-image DCP configuration.
+patch_size: 15          # dark-channel window (odd)
+omega: 0.95             # haze retention factor
+t0: 0.1                 # lower bound on transmission at recovery
+atmosphere:
+  estimator: brightest  # brightest | mean
+  top_fraction: 0.001   # top 0.1% dark-channel pixels
+refine:
+  method: guided        # none | guided | fast_guided | matting
+  guided_radius: 60     # ~4x patch size, as in He et al. ECCV 2010
+  guided_eps: 1.0e-3
+  fast_subsample: 4
+  matting_eps: 1.0e-7
+  matting_lambda: 1.0e-4
+  matting_radius: 1     # 3x3 windows
