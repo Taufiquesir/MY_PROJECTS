@@ -1,13 +1,15 @@
 # My Projects
 
-A collection of my personal and academic projects, spanning systems programming
-and machine learning.
+A collection of my personal and academic projects, spanning systems programming,
+machine learning and image processing.
 
 | Project | Description | Tech |
 |---|---|---|
 | [POSIX Shell](POSIX_SHELL_IMPLEMENTATION/) | A Unix shell built from scratch — process control, pipelines, I/O redirection, signals and job control | C++, POSIX, GNU readline |
 | [SMS Spam Classifier](SMS_SPAM_CLASSIFIER/) | Web app that classifies SMS messages as spam or ham, with a trained model and live demo | Python, scikit-learn, Streamlit |
 | [Crop & Weed Detection](CROP_WEED_DETECTION/) | Object-detection system distinguishing crops from weeds to enable targeted pesticide use | YOLOv3, Darknet, OpenCV |
+| [Monolingual Transformer LMs](MONOLINGUAL_TRANSFORMER_LM_HINDI_NEPALI/) | Two independent decoder-only Transformer language models built from scratch, for Hindi and Nepali | Python, PyTorch, SentencePiece |
+| [Haze Removal via Dark Channel Prior](DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR/) | Classical single-image dehazing with three transmission-refinement methods, plus a temporally regularised video extension | Python, NumPy, SciPy, OpenCV |
 
 ---
 
@@ -64,6 +66,49 @@ crop and weed images with YOLO-format bounding boxes.
 
 ---
 
+## Monolingual Transformer LMs (Hindi and Nepali)
+
+Two completely independent decoder-only Transformer language models, one for Hindi
+(higher-resource) and one for Nepali (lower-resource), built from scratch with no
+data, tokenizer or weights shared between them. Covers data collection and
+tokenizer construction, the Transformer implementation and pretraining, and
+reasoning finetuning with an attention analysis.
+
+See [`MONOLINGUAL_TRANSFORMER_LM_HINDI_NEPALI/README.md`](MONOLINGUAL_TRANSFORMER_LM_HINDI_NEPALI/README.md).
+
+---
+
+## Haze Removal via Dark Channel Prior
+
+Classical image dehazing implemented from first principles, with no learned
+component. The Dark Channel Prior pipeline exposes every intermediate output (dark
+channel, atmospheric light, raw and refined transmission, recovered image), and
+three transmission-refinement methods are compared on accuracy and runtime: soft
+matting, a guided filter and a fast guided filter. A video extension then studies
+why per-frame dehazing flickers and tests four temporal-smoothing variants.
+
+**Highlights**
+- Benchmarked on RESIDE SOTS: **19.82 dB** (indoor) and **17.03 dB** (outdoor) with default settings
+- Fast guided filter matches the guided filter within 0.04 dB at about 60% of the time; soft matting is roughly 100x slower with no gain
+- Video: smoothing the atmospheric light cuts flicker from **2.04 to 1.58** (clean video = 1.0); smoothing the transmission, even with optical-flow warping, does not help
+- Sky is a measurable failure mode (r = -0.50 between sky fraction and PSNR); a sky-aware transmission floor gains 2.4 dB on sky-heavy images
+- Every reported number regenerates from one script, and a re-run reproduced the results
+
+```bash
+cd DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR
+python3 -m venv --system-site-packages .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python -m pytest -q tests
+```
+
+Documentation: two project reports in [`reports/`](DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR/reports/),
+the final deck in [`presentation/`](DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR/presentation/), and
+[`IMPLEMENTATION_LOG.md`](DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR/IMPLEMENTATION_LOG.md) with every
+design decision and measurement. The datasets are downloaded separately; see the
+project README.
+
+---
+
 ## Repository layout
 
 ```
@@ -71,5 +116,7 @@ MY_PROJECTS
 ├── POSIX_SHELL_IMPLEMENTATION/
 ├── SMS_SPAM_CLASSIFIER/
 ├── CROP_WEED_DETECTION/
+├── MONOLINGUAL_TRANSFORMER_LM_HINDI_NEPALI/
+├── DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR/
 └── README.md
 ```
