@@ -1,0 +1,20 @@
+@page { size: A4; margin: 20mm 18mm; }
+body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; color:#1b1b1b; }
+h1 { color:#1f3a6e; font-size: 22pt; border-bottom: 3px solid #1f3a6e; padding-bottom:4px; page-break-before: always; }
+h1.first, .title h1 { page-break-before: avoid; }
+h2 { color:#1f3a6e; font-size: 14pt; margin-top: 1.4em; }
+h3 { font-size: 11.5pt; }
+code { background:#f0f2f6; padding:1px 4px; border-radius:3px; font-size:9.5pt; }
+pre { background:#f0f2f6; padding:8px 10px; border-radius:5px; font-size:9pt; page-break-inside: avoid; }
+table { border-collapse: collapse; width:100%; margin:10px 0; page-break-inside: avoid; }
+th,td { border:1px solid #c8cfdc; padding:5px 8px; text-align:left; font-size:9.8pt; vertical-align: top; }
+th { background:#e8edf7; }
+.box { border-left:5px solid #2b6cb0; background:#eaf2fb; padding:8px 12px; margin:12px 0; page-break-inside: avoid; }
+.analogy { border-left:5px solid #dd8a1a; background:#fff4e0; padding:8px 12px; margin:12px 0; page-break-inside: avoid; }
+.think { border-left:5px solid #2f855a; background:#e8f6ee; padding:8px 12px; margin:12px 0; page-break-inside: avoid; }
+.proj { border-left:5px solid #6b46c1; background:#f1ecfb; padding:8px 12px; margin:12px 0; page-break-inside: avoid; }
+figure { margin:14px 0; text-align:center; page-break-inside: avoid; }
+figcaption { font-size:9pt; color:#555; margin-top:4px; }
+svg { max-width:100%; height:auto; }
+.cover { text-align:center; margin-top: 60mm; }
+.cover h1 { border:none; font-size:30pt; page-break-before: avoid; }

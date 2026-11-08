@@ -10,6 +10,7 @@ machine learning and image processing.
 | [Crop & Weed Detection](CROP_WEED_DETECTION/) | Object-detection system distinguishing crops from weeds to enable targeted pesticide use | YOLOv3, Darknet, OpenCV |
 | [Monolingual Transformer LMs](MONOLINGUAL_TRANSFORMER_LM_HINDI_NEPALI/) | Two independent decoder-only Transformer language models built from scratch, for Hindi and Nepali | Python, PyTorch, SentencePiece |
 | [Haze Removal via Dark Channel Prior](DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR/) | Classical single-image dehazing with three transmission-refinement methods, plus a temporally regularised video extension | Python, NumPy, SciPy, OpenCV |
+| [Parallel LLM Inference Pipeline](PARALLEL_LLM_INFERENCE_PIPELINE/) | GPT-2 split across two worker processes over gRPC, with concurrency, backpressure and crash recovery by replay (distributed systems) | Python, PyTorch, gRPC |
 
 ---
 
@@ -109,6 +110,20 @@ project README.
 
 ---
 
+## Parallel LLM Inference Pipeline
+
+A distributed-systems project: GPT-2 small is cut into two halves, each running in
+its own process and talking over gRPC. The goal is token-for-token identical output
+to the single-process model, under concurrent users and when a worker is killed
+mid-sentence. Covers RPC, per-request KV-cache state, ordering and idempotency,
+bounded queues and backpressure, heartbeats, epoch fencing and recovery by replay.
+
+Status: planning and concept study complete; implementation in progress. See
+[`PARALLEL_LLM_INFERENCE_PIPELINE/README.md`](PARALLEL_LLM_INFERENCE_PIPELINE/README.md)
+for the phase-by-phase implementation plan.
+
+---
+
 ## Repository layout
 
 ```
@@ -118,5 +133,6 @@ MY_PROJECTS
 ├── CROP_WEED_DETECTION/
 ├── MONOLINGUAL_TRANSFORMER_LM_HINDI_NEPALI/
 ├── DIP_HAZE_REMOVAL_DARK_CHANNEL_PRIOR/
+├── PARALLEL_LLM_INFERENCE_PIPELINE/
 └── README.md
 ```
